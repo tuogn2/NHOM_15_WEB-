@@ -1,98 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webbb</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
 </head>
-
 <body>
-    <div class="header">
-        <div class="narbar">
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-laptop"></i> Zyy</a>
 
-            <div class="logo-box">
-                <h2 class="logo">:) NAME</h2>
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#event">Sự kiện</a>
+            <a href="#product">Sản phẩm</a>
+            <a href="#review">Đánh giá</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"> </div>
+            <div class="fas fa-search" id="search-btn"> </div>
+            <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+
+        <!-- Trang chủ --> 
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+            <p>Chiều đang dần buông hạt mưa rơi xuống không gian lắng yên
+                Suy tư vấn vương ngồi mộng mơ</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+   </section>
+
+   <!-- sự kiện -->
+   <section class="event" id="event">
+    <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+   <div class="box-container">
+
+        <div class="box">
+            <img src="./IMG/khuyenmai.jpg" alt="">
+        </div>
+
+    </div>
+</section>
+   
+  
+
+   <!-- sản phẩm -->
+
+   <section class="product" id="product">
+        <h1 class="heading">Danh mục <span>Sản phẩm</span></h1>
+       <div class="box-container">
+            <div class="box">
+                <img src="./IMG/gaming.webp" alt="">
+                <h3>Gaming</h3>
+                <p>mô tả</p>
+                <a href="" class="btn"> Xem thêm</a>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">TRANG CHỦ</a></li>
-                    <li><a href="#list-card">SẢN PHẨM</a></li>
-                    <li><a href=""><i class="fas fa-user"></i></a></li>
-                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
+            <div class="box">
+                <img src="./IMG/vanphong.jpg" alt="">
+                <h3>Văn phòng</h3>
+                <p>mô tả</p>
+                <a href="" class="btn"> Xem thêm</a>
+            </div>
+
+            <div class="box">
+                <img src="./IMG/sang.jpeg" alt="">
+                <h3>Cao cấp sang trọng</h3>
+                <p>mô tả</p>
+                <a href="" class="btn"> Xem thêm</a>
+            </div>
+
+            <div class="box">
+                <img src="./IMG/kyhuat.jpg" alt="">
+                <h3>Đồ họa kỹ thuật</h3>
+                <p>mô tả</p>
+                <a href="" class="btn"> Xem thêm</a>
+            </div>
+
+            <div class="box">
+                <img src="./IMG/mong.jpg" alt="">
+                <h3>Mỏng nhẹ</h3>
+                <p>mô tả</p>
+                <a href="" class="btn"> Xem thêm</a>
             </div>
 
         </div>
+   </section>
 
-        <div class="space">
+    <!-- đánh giá -->
+    <section class="review" id="review">
+        <h1 class="heading">Khách hàng <span>đánh giá</span></h1>
+
+        <div class="review-slider">
+            <div class="wrapper">
+
+                <div class="box">
+                    <img src="./IMG/kh1.jpg" alt="">
+                    <p>Chồi ôi nhân ziên dĩa thưn j đâu, bà Zy cute dã man, tư vấn nhiệt tình, 10 điểm</p>
+                    <h3>Mỹ Diệu</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./IMG/kh1.jpg" alt="">
+                    <p>Chồi ôi nhân ziên dĩa thưn j đâu, bà Zy cute dã man, tư vấn nhiệt tình, 10 điểm</p>
+                    <h3>Mỹ Diệu</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./IMG/kh1.jpg" alt="">
+                    <p>Chồi ôi nhân ziên dĩa thưn j đâu, bà Zy cute dã man, tư vấn nhiệt tình, 10 điểm</p>
+                    <h3>Mỹ Diệu</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    
+       </section>
 
+   <!-- footer -->
+   <section class="footer">
+        <div class="box-container">
 
-        <div class="search-box">
-            <input class="search-txt" type="text" placeholder="Type to search">
-            <a class="search-btn" href=""> <i class="fas fa-search"></i></a>
+            <div class="box">
+                <h3>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> 0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> 123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> email@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
         </div>
-
-    </div>
-
-    <div class="content">
-        <h1>Danh sách các loại lap top</h1>
-        <div id="list-card">
-            <a href="#">
-                <div class="card card1 ">
-                    <h3>Gaming</h3>
-                </div>
-            </a>
-
-            <a href="">
-                <div class="card card2">
-                    <h3>Học tập văn phòng</h3>
-                </div>
-            </a>
-
-            <a href="">
-                <div class="card card3">
-                    <h3>Đồ họa kỹ thuật</h3>
-                </div>
-            </a>
-
-            <a href="">
-                <div class="card card4">
-                    <h3>Mỏng nhẹ</h3>
-                </div>
-            </a>
-
-            <a href="">
-                <div class="card card5">
-                    <h3>Cao cấp sang trọng</h3>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p class="infor">
-            <b> <i class="fas fa-warehouse"></i> Địa chỉ:</b> 12 Nguyễn Văn Bảo, phường 4, Gò Vấp, thành phố Hồ Chí Minh
-            <br>
-            <b> <i class="fas fa-phone-square-alt"></i> Hotline</b>: 0555778233 <br>
-            <b> <i class="fab fa-facebook"></i> Facebook</b>: facebook.com/webCuaTui
-        </p>
-
-        <p class="member">
-            <b><i class="fas fa-users"></i> Các thành viên:</b> <br>
-            Trần Thị Thúy Vy - 21046361 <br>
-            ...
-        </p>
-
-    </div>
-
-
+   </section>
 </body>
-
 </html>
