@@ -335,7 +335,69 @@ section{
 
 
 
+/* thanh search */
+.search{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    /* top: 88px; */
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ff7800;
+    display: flex;
+    align-items: center;
+    border-style: double;
+    border-radius: 30px;
+    animation: show 1s forwards;
+    /* animation: hide 1s forwards; */
 
+}
 
+@keyframes show{
+    from{
+        top:0;
+    }
+    to{
+        top:88px;
+    }
 
+}
 
+@keyframes hide{
+    from{
+        top:88px;
+    }
+    to{
+        top:0;
+    }
+    
+}
+.search-icon{
+    
+    font-size: 16px;
+    padding: 16px 20px ;
+   
+}
+.search-icon:hover{
+    background-color: rgb(255, 119, 0);
+    border-radius: 30px 0 0 30px;
+}
+.search-icon:hover:active{
+    background-color: rgba(255, 119, 0,0.5);
+    opacity: 0.5;
+}
+
+.search-text{
+    height: 100%;
+    width: 100px;
+    margin: 10px;
+    background-color: transparent;
+    flex: 1;
+}
+
+.search-line{
+    height: 80%;
+    width: 2px;
+    border-radius: 10px;
+    background-color: #ff7800;
+}
