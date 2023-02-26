@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    background-image: url('../IMG/back.jfif');
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.white{
+    color: aliceblue;
+}
+.back{
+    padding:10px;
+}
+.login-container{
+    background-color: rgba(127, 255, 212,0.1);
+    height: 451px;
+    width: 330px;
+    border: 2px double #cb8241;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    
+}.title-login{
+    text-align: center;
+    margin: 50px 0 ;
+    color: aliceblue;    
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 40px; */
+}
+
+.form-infor{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login-email,.login-pass{
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 40px;
+    width: 270px;
+    border-radius: 10px;
+    border: none;
+    outline:  1px#b3a190;
+    border: 1px solid #cb8241;
+}
+
+.another-choice{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+
+}
+.another-choice a{
+    text-decoration: none;
+    color: #7b6f64;
+}
+.another-choice a:hover{
+    color: rgb(119, 184, 227);
+}
+
+
+.btnlogin{
+    margin:  30px 0 20px 0;
+    height: 45px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgba(127, 255, 212,0.2);
+    transition: 0.1s ;
+    border: 1px solid #cb8241;
+}
+
+.btnlogin button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+
+}
+
+.btnlogin:active{
+    background-color: rgba(127, 255, 212,0.5);
+}
+
+
+.form-infor span{
+    margin: 10px 0;
+}
+
+.social-container{
+    width: 100%;
+    text-align: center;
+}
+.social-container a{
+    margin: 0 5px;
+    
+}
+
+.social-container a i{
+    height: 30px;
+    width: 30px;
+    padding-top: 7px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 5px;
+    color: rgba(216, 216, 224, 0.7);
+    background-color: transparent;
+    border: 1px solid #cb8241;
+}
