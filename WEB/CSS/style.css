@@ -130,7 +130,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./IMG/anhnen.jpg);
+    background-image: url(../IMG/anhnen.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 180px;
