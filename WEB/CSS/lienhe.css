@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Source+Sans+Pro:wght@900&display=swap');
+
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    --border: 20px solid rgba(0,0,0,.1);
+    --outline: 1px solid rgba(0,0,0,.1);
+    --outline-hover: 2px solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body{
+    background: #eee;
+}
+
+section{
+    padding: 2px 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    font-size: 35px;
+    color: var(--black);
+}
+
+.heading span{
+    background: var(--orange);
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn{
+    margin-top: 1px;
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid var(--black);
+    color: var(--black); 
+
+}
+
+.btn:hover{
+    background-color: var(--orange);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+.header .logo{
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color:var(--orange);
+}
+
+.header .navbar a{
+    font-size: 17px;
+    margin: 0 10px;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+.header .icons div{
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    color: var(--black);
+    margin-right: 3px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.contact{
+    margin-top: 200px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact .contact-container{
+    padding: 30px;
+    background-color: white;
+}
+
+.contact .contact-container h3{
+    color: var(--black);
+    font-size: 20px;
+}
+
+.contact .contact-container p{
+    font-size: 15px;
+}
+
+.contact .contact-container table{
+    padding: 10px 0;
+}
+
+.contact .contact-container table td, tr{
+    padding: 10px;
+}
+
+.contact .contact-container table input, textarea{
+    border: var(--black) solid 1px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.contact .contact-container label{
+    font-size: 15px;
+}
+
+.contact .contact-container .submit{
+    font-size: 15px;
+    background: var(--orange);
+    padding: 0 10px;
+}
+
+
+
