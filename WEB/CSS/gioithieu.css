@@ -122,51 +122,45 @@ section{
     color: #fff;
 }
 
-.contact{
-    margin-top: 200px;
+
+.gioithieu .box-container {
+    margin-top: 150px;
     display: flex;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-    
+
 }
 
-.contact .contact-container{
-    padding: 30px;
-    background-color: white;
-}
-
-.contact .contact-container h3{
-    color: var(--black);
-    font-size: 20px;
-}
-
-.contact .contact-container p{
+.gioithieu .box-container .box-gioithieu {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
     font-size: 15px;
 }
 
-.contact .contact-container table{
-    padding: 10px 0;
+.gioithieu .box-container .box-gioithieu span{
+    color: var(--orange);
 }
 
-.contact .contact-container table td, tr{
-    padding: 10px;
-}
-
-.contact .contact-container table input, textarea{
-    border: var(--black) solid 1px;
-    padding: 2px;
+.gioithieu .box-container .box-thanhvien {
+    padding: 20px;
+    font-size: 15px;
     border-radius: 10px;
+    border: var(--orange) solid;
 }
 
-.contact .contact-container label{
-    font-size: 15px;
+.gioithieu .tintuc {
+    margin-top: 20px;
 }
 
-.contact .contact-container .submit{
-    font-size: 15px;
-    background: var(--orange);
-    padding: 0 10px;
+.gioithieu .tintuc h1{
+    font-size: 20px;
+    color: var(--orange);
+    text-decoration: underline
+}
+
+.gioithieu .tintuc .box {
+    padding: 10px;
+    font-size: 10px;
+    margin: 0 3px;
 }
 
 .footer{
@@ -234,5 +228,4 @@ section{
     background: var(--orange);
     color: white;
 }
-
 
