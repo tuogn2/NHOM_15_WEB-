@@ -31,50 +31,24 @@
             <div class="fas fa-bars" id="menu-btn"> </div>
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <div class="fas fa-shopping-cart" id="cart-btn"> </div>
-            <a href="./loginform.html"><div class="fas fa-user" id="login-btn"></div></a>
+            <a href="./loginform.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
         </div>
 
-        
-        
+
+
     </header>
-    <div class="container">
-
-        <div class="login-container">
-            <form action="" class="form-login">
-                <h1 class="title-login">Login</h1>
-                <div class="form-infor">
-                    <input type="text" class="login-email" placeholder="Name">
-                    <input type="password" placeholder="Password" class="login-pass">
-                    <div class="another-choice">
-                        <div>
-                            <input type="checkbox" id="remenber">
-                            <label for="remenber">Remenber me</label>
-                        </div>
-                        <a href="#">Forgot password</a>
-                    </div>
-                    
-                       
-                            <a class="btnlogin" href="./index.html">
-                                <!-- <button > -->
-                                    Login
-                                <!-- </button> -->
-                            </a>
-                        
-                    <span>or use your account</span>
-                    <div class="social-container">
-                        <a href=""><i class="fa-brands fa-google"></i>
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </form>
+    <div class="container-btn">
+        <div class="button">
+            <button onclick={handleclickLogin()} class="button-login">LOG IN</button>
+            <button onclick={handleclicksignin()} class="button-singnin">SIGNIN</button>
         </div>
+    </div>
+    <div class="container">
+        
+
+
 
 
     </div>
@@ -88,19 +62,20 @@
                 <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
                 <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
                 <div class="share">
-                    <a href="" class="fab fa-facebook-f" ></a>
-                    <a href="" class="fab fa-twitter" > </a>
-                    <a href="" class="fab fa-instagram" > </a>
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"> </a>
+                    <a href="" class="fab fa-instagram"> </a>
 
                 </div>
             </div>
 
             <div class="box">
                 <h3>Thông tin liên hệ: </h3>
-                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
-                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
-                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
-                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links"> <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links"> <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ
+                    Chí Minh</a>
             </div>
 
             <div class="box">
@@ -113,7 +88,8 @@
                 <p>21014021 Võ Nguyên Vũ </p>
             </div>
         </div>
-   </section>
+    </section>
+    <script src="../JS/login.js"></script>
 </body>
 
 </html>

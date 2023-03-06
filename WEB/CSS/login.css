@@ -397,3 +397,45 @@ section{
 .social-container a i:active{
     color: rgb(201, 173, 173);
 }
+
+
+/* button */
+.container-btn{
+    background-color: transparent;
+    position: fixed;
+    top: 40%;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(163, 160, 160,0.1);
+}
+ 
+.button-login ,.button-singnin{
+    width: 88px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+
+    
+.button-login:hover ,.button-singnin:hover{
+    background-color: transparent;
+}
+
+.button-login:hover:active ,.button-singnin:hover:active{
+    background-color: #1d150e;
+    color: white;
+}
