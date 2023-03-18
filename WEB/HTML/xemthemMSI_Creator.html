@@ -5,25 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/xemthemMSI_Creator.css">
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
     <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
-        <a href="trangchu.html" class="home">Quay lai Trang chu</a>
-        <div class="header">
-            <h2>Laptopp Ki Thuat</h2>
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
         </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+       <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+    </section>
         <div class="maincontent">
             <div class="content">
-                <p><b><h2>Laptop MSI Creator Z16 A12UET i7 12700H/16GB/1TB</h2></b></p>
+                <span style="font-size: 28px;">Laptop MSI Creator Z16 A12UET i7 12700H</span>
                 <hr>
-                <img src="../IMG/LaptopKyThuat/MSI/msi-creator-z16-a12uet-i7(1).jpg" alt="MSI">
+                <img src="../IMG/LaptopKythuat/MSI/msi-creator-z16-a12uet-i7(1).jpg" alt="MSI">
                 <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
                 <div class="box">
                     <div class="text">
-                        <p>Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
-                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a></p>
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
                         <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
                         Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
                         <p>Bảo hành chính hãng laptop 24 tháng tại các trung tâm bảo hành hãng
@@ -33,24 +90,36 @@
                 <div class="information">
                     <div class="Paragraph">
                         <h3>Thông tin sản phẩm</h3>
-                        <img src="../IMG/LaptopKyThuat/MSI/msi-creator-z16-a12uet-i7(2).jpg" alt="MSI">
+                        <img src="../IMG/LaptopKythuat/MSI/msi-creator-z16-a12uet-i7(2).jpg" alt="MSI">
                         <p>
                             <b>Chinh phục mọi ánh nhìn với phong cách thiết kế thời thượng, sang trọng, <span style="color: blue;">laptop MSI Creator Z16 A12UET 
                             i7 12700H (036VN)</span> còn được trang bị cấu hình hoàn hảo từ CPU Gen 12 đáp ứng mọi nhu cầu của một chiếc 
                             <span style="color: blue;">laptop đồ hoạ - kỹ thuật</span> chuyên nghiệp của người dùng.</b>
-                        <div class="text">
+                        <div class="text1" style="display:none">
                             <p>
                                 <ul>
-                                    <li> Laptop MSI sở hữu sức mạnh vượt trội nhờ chip Intel Core i7 Alder Lake 12700H cùng card rời NVIDIA GeForce RTX 3060 6 GB cùng 
-                                        bạn chinh phục mọi tác vụ thiết kế đồ hoạ chuyên nghiệp, render video hay giải trí với các tựa phim hấp dẫn.</li><br>
-                                    <li>Cho phép người dùng làm nhiều việc cùng lúc như vừa lên ý tưởng thiết kế vừa nghe nhạc mà không lo xảy ra tình trạng giật lag, 
-                                        tốc độ xử lý ấn tượng nhờ loại RAM thế hệ mới DDR5 cùng dung lượng 16 GB. Ổ cứng SSD 1 TB cung cấp không gian lưu trữ thoải mái, 
-                                        giúp mở máy và vận hành các ứng dụng trong thời gian nhanh chóng.</li><br>
-                                    <li> Được chế tác từ lớp vỏ kim loại với gam màu xám chủ đạo cùng những đường góc cạnh vuông vức, sắc sảo, khối lượng 2.2 kg cho cảm 
-                                        giác chắc chắn khi cầm nắm, di chuyển.</li><br>
-                                    <li>Laptop màn hình cảm ứng 16 inch QHD+ (2560 x 1600) mang đến chất lượng hiển thị rõ nét, chân thật đến từng chi tiết. Công nghệ IPS 
-                                        cho khung hình rộng mở lên đến 178 độ cùng 100% DCI-P3 cung cấp các gam màu sắc chuẩn xác, tươi mới, tần số quét 120 Hz cho trải nghiệm 
-                                        hình ảnh mượt mà khi cuộn trang, lướt web.</li><br>
+                                    <li> 
+                                        Laptop MSI sở hữu sức mạnh vượt trội nhờ chip <b>Intel Core i7 Alder Lake 12700H</b> cùng card rời <b>NVIDIA GeForce RTX 3060 6 GB</b> cùng 
+                                        bạn chinh phục mọi tác vụ thiết kế đồ hoạ chuyên nghiệp, render video hay giải trí với các tựa phim hấp dẫn.
+                                        <img src="../IMG/LaptopKythuat/MSI/msi-creator-(2).jpg" alt="MSI">
+                                    </li><br>
+                                    <li>
+                                        Cho phép người dùng làm nhiều việc cùng lúc như vừa lên ý tưởng thiết kế vừa nghe nhạc mà không lo xảy ra tình trạng giật lag, 
+                                        tốc độ xử lý ấn tượng nhờ loại RAM thế hệ mới <span style="color: blue;">DDR5</span> cùng dung lượng <span style="color: blue;">16GB</span>. Ổ cứng SSD 1 TB cung cấp không gian lưu trữ thoải mái, 
+                                        giúp mở máy và vận hành các ứng dụng trong thời gian nhanh chóng.
+                                        <img src="../IMG/LaptopKythuat/MSI/msi-creator-(3).jpg" alt="MSI">
+                                    </li><br>
+                                    <li> 
+                                        Được chế tác từ lớp vỏ kim loại với gam màu xám chủ đạo cùng những đường góc cạnh vuông vức, sắc sảo, khối lượng <b>2.2 kg</b> cho cảm 
+                                        giác chắc chắn khi cầm nắm, di chuyển.
+                                        <img src="../IMG/LaptopKythuat/MSI/msi-creator-(4).jpg" alt="MSI">
+                                    </li><br>
+                                    <li>
+                                        Laptop màn hình cảm ứng <b>16 inch</b> QHD+ (2560 x 1600) mang đến chất lượng hiển thị rõ nét, chân thật đến từng chi tiết. Công nghệ IPS 
+                                        cho khung hình rộng mở lên đến 178 độ cùng 100% DCI-P3 cung cấp các gam màu sắc chuẩn xác, tươi mới, tần số quét <b>120 Hz</b> cho trải nghiệm 
+                                        hình ảnh mượt mà khi cuộn trang, lướt web.
+                                        <img src="../IMG/LaptopKythuat/MSI/msi-creator-(5).jpg" alt="MSI">
+                                    </li><br>
                                     <li>Cho phép người dùng khởi động máy và truy cập ứng dụng nhanh chóng hơn nhờ tính năng mở khóa khuôn mặt với camera IR, bên cạnh đó cũng 
                                         tăng cường độ bảo mật cho laptop.</li><br>
                                     <li>Laptop MSI Creator còn tạo cảm giác hứng khởi hơn khi giải trí và làm việc cũng như hỗ trợ gõ chính xác cho người dùng với đèn bàn phím chuyển màu RGB.</li><br>
@@ -59,17 +128,35 @@
                                 </ul>
                             </p>
                         </div>
+                        <button id="show-more">Xem thêm</button>
+                    <script>
+                        var showMoreButton = document.getElementById("show-more");
+                        var hiddenText = document.querySelector(".text1");
+                        var paragraph = document.querySelector(".Paragraph");
+               
+                        showMoreButton.addEventListener("click", function() {
+                           if (hiddenText.style.display === "none") {
+                              hiddenText.style.display = "block";
+                              paragraph.style.height = "auto";
+                              showMoreButton.textContent = "Thu gọn";
+                           } else {
+                              hiddenText.style.display = "none";
+                              paragraph.style.height = "50px";
+                              showMoreButton.textContent = "Xem thêm";
+                           }
+                        });
+                     </script>
                     </div>
                 </div>
             </div>
             <div class="sidebar">
-                <br><hr>
+                <hr>
                 <div class="box">
                     <div class="color1">
-                        <a href="#">Hồng</a>
+                        <a href="#">Xanh</a>
                     </div>
                     <div class="color2">
-                        <a href="#">Xanh</a>
+                        <a href="#">Đen</a>
                     </div>
                 </div>
                 <div class="text">
@@ -87,51 +174,26 @@
                     <span style="color: red; font-weight: bold; font-size: 20px;">60.990.000₫*</span>
                     <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
                 </p>
-                <a href="#"><img src="../IMG/LaptopKyThuat/MSI/discoutOnline.jpg" alt="Sự Kiện laptop"></a>
                 </div>
             <div class="sidebar-content">
-                <table style="width: 465px;">
-                    <tr style="background: rgb(192, 190, 190);">
-                        <td>
-                                <div class="promotion-sidebar">
-                                    <div class="text">
-                                        <b><span>Khuyến mãi</span></b>
-                                        <p>Giá và khuyến mãi dự kiến áp dụng đến 23:00 | 28/02</p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sidebar-promotion-list">
-                                    <ol type="1">
-                                        <li>Phiếu mua hàng trị giá 30.000đ áp dụng mua sim có gói của tất <br>
-                                            cả nhà mạng</li>
-                                        <li>Tặng tai nghe Bluetooth 790,000đ khi mua Combo Laptop + Office <br>
-                                            Home & Student (Không áp dụng trả góp) </li>
-                                        <li>Mua kèm Macbook ưu đãi thêm (Tuỳ sản phẩm và không áp dụng 
-                                            khuyến mãi khác của sản phẩm mua kèm):
-                                            <ul>
-                                                <li>Phụ kiện: Giảm đến 50%</li>
-                                                <li>Apple Watch: Giảm đến 30%</li>
-                                                <li>iPad: Giảm đến 25%</li>
-                                            </ul>
-                                        </li>
-                                        <li>Nhập mã MOMO100K giảm 2% tối đa 100K khi thanh toán qua Ví <br>
-                                            Momo</li>
-                                        <li>Nhập mã khuyến mãi giảm đến 100.000đ khi thanh toán qua <br>
-                                            VNPAY-QR cho hóa đơn từ 10 triệu</li>
-                                            </ol>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p><span style="color: red;">(*)</span> Giá hoặc khuyến mãi không áp dụng trả góp lãi suất đặc biệt (0%, <br>
-                                    0.5%, 1%)</p>
-                            </td>
-                        </tr>
-                </table>
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
                 <div class="address">
                     <p>
                      Chọn địa chỉ nhận hàng <select name="" id="">
@@ -144,38 +206,6 @@
                     </select> 
                      để biết thời gian giao hàng.
                 </p>
-                </div><hr>
-                <div class="buynow-sidebar-content">
-                    <p><a href="#">Mua Ngay</a></p>
-                </div>
-                <div class="box">
-                    <div class="tragop">
-                        <p><a href="#">Mua trả góp 0%<br>
-                            Duyệt hồ sơ trong 5 phút</a></p>
-                    </div>
-                    <div class="tragopquathe">
-                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
-                    </div>
-                </div>
-                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span>
-                <div class="box-uudai">
-                   <div class="title-uudai">
-                        <p><span style="font-weight: bold;">2 ưu đãi thêm</span> Dự kiến áp dụng đến 23:00 | 28/02</p>
-                   </div>
-                   <div class="content-uudai">
-                        <span>Giảm 20% phần mềm diệt Virus, Bảo vệ thanh toán F-Secure + Tặng thêm 3 tháng sử dụng</span>
-                        <ul>
-                            Tặng cho khách lần đầu mua hàng online tại web <a href="https://www.bachhoaxanh.com/">BachhoaXANH.com</a>
-                                <li>Mã giảm<span style="font-weight: bold;">100.000đ áp dụng đơn hàng từ 500.000đ</span</li>
-                                <li>Đại siêu thị Online với <span style="font-weight: bold;">15.000</span> sản phẩm tiêu dùng, thịt, cá, rau…</li>
-                                <li><span style="font-weight: bold;">FREESHIP</span> đơn hàng từ 300.000đ hoặc thành viên VÀNG</li>
-                                <li>Giao nhanh trong 2 giờ</li>
-                        </ul>
-                        <p>Áp dụng tại Tp.HCM và 22 tỉnh thành</p>
-                   </div>
-                </div>
-                <div class="maQR">  
-                    <img src="../IMG/LaptopKyThuat/MSI/Sukien.jpg" alt="Quet ma QR">
                 </div>
                 <div class="configuration">
                     <h2>Cấu hình Laptop MSI Creator Z16 A12UET i7 12700H/16GB/1TB SSD/6GB</h2>
@@ -231,18 +261,39 @@
             </div>
         </div>
     </div>
-    <div class="mainfooter">
-        <div class="footer">
-            <ol>
-                <h3><i class="fa-solid fa-phone-volume"></i>Thông tin liên hệ</h3>
-                <li>21046361 Trần Thị Thúy Vy</li>
-                <li>21129041 Đỗ Chí Tường</li>
-                <li>21000505 Trương Công Anh Vĩ</li>
-                <li>20003435 Trương Thị Tường Vi</li>
-                <li>21026071 Đặng Minh Vương</li>
-                <li>21014021 Võ Nguyên Vũ</li>
-            </ol>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
         </div>
-    </div>
+   </section>
+   <script src="./search.js"></script>
 </body>
 </html>

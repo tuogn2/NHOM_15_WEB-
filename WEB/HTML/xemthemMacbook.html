@@ -5,41 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
     <link rel="stylesheet" href="../CSS/xemthem.css">
     <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
-        <a href="trangchu.html" class="home">Quay lai Trang chu</a>
-        <div class="header">
-            <h2>Laptopp Ki Thuat</h2>
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
         </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+       <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+    </section>
         <div class="maincontent">
             <div class="content">
-                <p><b><h2>Laptop Apple MacBook Pro M1 2020 16GB/512GB</h2></b></p>
+                <span style="font-size: 28px;">Laptop Apple MacBook Pro M1 2020 </span>
                 <hr>
                 <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(1).jpg" alt="">
                 <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
                 <div class="box">
                     <div class="text">
-                        <p>Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
-                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a></p>
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
                         <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
                         Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
-                        <p>Bảo hành chính hãng laptop 12 tháng tại các trung tâm bảo hành hãng
+                        <p>Bảo hành chính hãng laptop <b>12 tháng</b> tại các trung tâm bảo hành hãng
                         <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
                     </div>
                 </div>
                 <div class="information">
-                    <div class="Paragraph">
-                        <h3>Thông tin sản phẩm</h3>
+                    <div class="Paragraph" id="text-short">
+                        <h1>Thông tin sản phẩm</h1>
                         <p>
                     <b><span style="color: blue">Macbook Pro M1 2020</span> được nâng cấp với bộ vi xử lý mới cực kỳ mạnh 
                     mẽ, chiếc laptop này sẽ phục vụ tốt cho công việc của bạn, đặc biệt cho lĩnh vực đồ họa, kỹ thuật.</b>
+                        <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(2).jpg" alt="apple-macbook-pro-2020-z11c">
                         </p>
                         <h3>Tăng cường không gian lưu trữ, tốc độ xử lý</h3>
-                        <div class="text">
-                    <p>
+                        <div class="text1" style="display: none;">    
                         Chip Apple M1 là một bộ vi xử lý mạnh mẽ, được ra mắt lần đầu tiên trên máy 
                         Mac. Đây là con chip sản xuất trên tiến trình 5 nm, tích hợp CPU 8 lõi với 4 lõi 
                         Chip Apple M1 là một bộ vi xử lý mạnh mẽ, được ra mắt lần đầu tiên trên máy 
@@ -49,31 +106,46 @@
                         hiệu suất cực kỳ cao.zCPU tốc độ và và 4 lõi tiết kiệm năng lượng. Nhờ vậy, 
                         thời lượng pin của laptop được kéo dài đến tận 10 tiếng đồng hồ, giúp cho bạn 
                         thoải mái làm việc với một hiệu suất cực kỳ cao.</p>
-                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(2).jpg" alt="apple-macbook-pro-2020-z11c">
-                    <p>
+                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(3).jpg" alt="apple-macbook-pro-2020-z11c">
+                    
                         Ngoài ra, card đồ họa tích hợp <b>8 nhân GPU</b> giúp người dùng thao tác tốt các tác vụ văn phòng cơ 
                         bản Word, Excel,... cũng như thiết kế đồ họa bằng Photoshop, AI, Pr,... một cách trơn tru, mượt 
                         mà với tốc độ xử lý gấp <b>5 lần</b> các thế hệ trước đó. Nhờ vậy, bạn có thể nâng cao hiệu suất làm 
                         việc cũng như tiết kiệm được thời gian một cách tối ưu nhất.
-                    </p>
-                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(3).jpg" alt="apple-macbook-pro-2020-z11c">
-                    <p>
+                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(4).jpg" alt="apple-macbook-pro-2020-z11c">
+                    
                         <span style="color: blue">Laptop SSD 512 GB</span> giúp bạn tăng tốc toàn diện máy tính với tốc độ khởi động, mở ứng dụng, truyền dữ 
                         liệu nhanh vượt trội so với ổ cứng HDD truyền thống. Bên cạnh đó, <b>RAM 16 GB</b> của laptop giúp nâng cao 
                         khả năng đa nhiệm, dễ dàng mở những tập tin lớn, nặng hay mở nhiều trình duyệt cùng lúc nhưng không 
                         xảy ra tình trạng giật lag.
-                    </p>
-                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(4).jpg" alt="apple-macbook-pro-2020-z11c">
-
+                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c(5).jpg" alt="apple-macbook-pro-2020-z11c">
                         </div>
+                        <button id="show-more">Xem thêm</button>
+                    <script>
+                        var showMoreButton = document.getElementById("show-more");
+                        var hiddenText = document.querySelector(".text1");
+                        var paragraph = document.querySelector(".Paragraph");
+               
+                        showMoreButton.addEventListener("click", function() {
+                           if (hiddenText.style.display === "none") {
+                              hiddenText.style.display = "block";
+                              paragraph.style.height = "auto";
+                              showMoreButton.textContent = "Thu gọn";
+                           } else {
+                              hiddenText.style.display = "none";
+                              paragraph.style.height = "50px";
+                              showMoreButton.textContent = "Xem thêm";
+                           }
+                        });
+                     </script>
                     </div>
                 </div>
             </div>
             <div class="sidebar">
-                <br><hr>
+                <hr>
                 <div class="box">
                     <div class="color1">
-                        <a href="#">Xám</a>
+                        <a href="#">Xanh</a>
                     </div>
                     <div class="color2">
                         <a href="#">Đen</a>
@@ -81,7 +153,7 @@
                 </div>
                 <div class="text">
                     <p>
-                        Giá tại <select name="" id="">
+                        Giá tại: <select name="" id="">
                     <option name="use" value="">Hồ Chí Minh</option>
                     <option name="use" value="">Hà Nội</option>
                     <option name="use" value="">Đà Nẵng</option>
@@ -95,51 +167,26 @@
                      <span style="text-decoration: line-through; color: rgb(107, 106, 105); font-size: 20px;">45.590.000đ</span> 
                     <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); ">Trả góp 0%</span>
                 </p>
-                <a href="3"><img src="../IMG/LaptopKyThuat/Apple Macbook/Sk-laptop.png" alt="Sự Kiện laptop"></a>
                 </div>
             <div class="sidebar-content">
-                <table style="width: 465px;">
-                    <tr style="background: rgb(192, 190, 190);">
-                        <td>
-                                <div class="promotion-sidebar">
-                                    <div class="text">
-                                        <b><span>Khuyến mãi</span></b>
-                                        <p>Giá và khuyến mãi dự kiến áp dụng đến 23:00 | 28/02</p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sidebar-promotion-list">
-                                    <ol type="1">
-                                        <li>Phiếu mua hàng trị giá 30.000đ áp dụng mua sim có gói của tất <br>
-                                            cả nhà mạng</li>
-                                        <li>Tặng tai nghe Bluetooth 790,000đ khi mua Combo Laptop + Office <br>
-                                            Home & Student (Không áp dụng trả góp) </li>
-                                        <li>Mua kèm Macbook ưu đãi thêm (Tuỳ sản phẩm và không áp dụng 
-                                            khuyến mãi khác của sản phẩm mua kèm):
-                                            <ul>
-                                                <li>Phụ kiện: Giảm đến 50%</li>
-                                                <li>Apple Watch: Giảm đến 30%</li>
-                                                <li>iPad: Giảm đến 25%</li>
-                                            </ul>
-                                        </li>
-                                        <li>Nhập mã MOMO100K giảm 2% tối đa 100K khi thanh toán qua Ví <br>
-                                            Momo</li>
-                                        <li>Nhập mã khuyến mãi giảm đến 100.000đ khi thanh toán qua <br>
-                                            VNPAY-QR cho hóa đơn từ 10 triệu</li>
-                                            </ol>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p><span style="color: red;">(*)</span> Giá hoặc khuyến mãi không áp dụng trả góp lãi suất đặc biệt (0%, <br>
-                                    0.5%, 1%)</p>
-                            </td>
-                        </tr>
-                </table>
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
                 <div class="address">
                     <p>
                      Chọn địa chỉ nhận hàng <select name="" id="">
@@ -152,38 +199,6 @@
                     </select> 
                      để biết thời gian giao hàng.
                 </p>
-                </div><hr>
-                <div class="buynow-sidebar-content">
-                    <p><a href="#">Mua Ngay</a></p>
-                </div>
-                <div class="box">
-                    <div class="tragop">
-                        <p><a href="#">Mua trả góp 0%<br>
-                            Duyệt hồ sơ trong 5 phút</a></p>
-                    </div>
-                    <div class="tragopquathe">
-                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
-                    </div>
-                </div>
-                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span>
-                <div class="box-uudai">
-                   <div class="title-uudai">
-                        <p><span style="font-weight: bold;">2 ưu đãi thêm</span> Dự kiến áp dụng đến 23:00 | 28/02</p>
-                   </div>
-                   <div class="content-uudai">
-                        <span>Giảm 20% phần mềm diệt Virus, Bảo vệ thanh toán F-Secure + Tặng thêm 3 tháng sử dụng</span>
-                        <ul>
-                            Tặng cho khách lần đầu mua hàng online tại web <a href="https://www.bachhoaxanh.com/">BachhoaXANH.com</a>
-                                <li>Mã giảm <span style="font-weight: bold;">100.000đ</span style="font-weight: bold;"> áp dụng đơn hàng từ <span>500.000đ</span></li>
-                                <li>Đại siêu thị Online với <span style="font-weight: bold;">15.000</span> sản phẩm tiêu dùng, thịt, cá, rau…</li>
-                                <li><span style="font-weight: bold;">FREEship</span> đơn hàng từ 300.000đ hoặc thành viên VÀNG</li>
-                                <li>Giao nhanh trong 2 giờ</li>
-                        </ul>
-                        <p>Áp dụng tại Tp.HCM và 22 tỉnh thành</p>
-                   </div>
-                </div>
-                <div class="maQR">  
-                    <img src="../IMG/LaptopKyThuat/Apple Macbook/QR_app.jpg" alt="Quet ma QR">
                 </div>
                 <div class="configuration">
                     <h2>Cấu hình Laptop Apple MacBook Pro M1 2020 16GB/512GB</h2>
@@ -237,18 +252,39 @@
             </div>
         </div>
     </div>
-    <div class="mainfooter">
-        <div class="footer">
-            <ol>
-                <h3><i class="fa-solid fa-phone-volume"></i>Thông tin liên hệ</h3>
-                <li>21046361 Trần Thị Thúy Vy</li>
-                <li>21129041 Đỗ Chí Tường</li>
-                <li>21000505 Trương Công Anh Vĩ</li>
-                <li>20003435 Trương Thị Tường Vi</li>
-                <li>21026071 Đặng Minh Vương</li>
-                <li>21014021 Võ Nguyên Vũ</li>
-            </ol>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
         </div>
-    </div>
+   </section>
+   <script src="./search.js"></script>  
 </body>
 </html>
