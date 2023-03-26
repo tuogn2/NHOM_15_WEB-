@@ -401,3 +401,7 @@ section{
     border-radius: 10px;
     background-color: #ff7800;
 }
+
+.test .container img{
+    width: 100%;
+}
