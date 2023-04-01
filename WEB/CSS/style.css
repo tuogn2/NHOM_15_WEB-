@@ -406,3 +406,34 @@ section{
 .test .container img{
     width: 100%;
 }
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:850px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: 2rem;
+        width: 25rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background-color: #fff;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
