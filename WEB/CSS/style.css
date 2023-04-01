@@ -98,6 +98,7 @@ section{
     font-size: 17px;
     margin: 0 10px;
     color: var(--black);
+    text-decoration: none;
 }
 
 .header .navbar a:hover{
