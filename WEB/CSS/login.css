@@ -282,7 +282,7 @@ section{
 .login-container{
     /* background-color: rgba(127, 255, 212,0.1); */
     height: 470px;
-    width: 330px;
+    width: 444px;
     border: 2px double #cb8241;
     border-radius: 10px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -314,13 +314,37 @@ section{
     margin: 10px 0;
     padding: 0 10px;
     height: 40px;
-    width: 270px;
+    /* width: 270px; */
+    flex: 1;
     border-radius: 10px;
     border: none;
     outline:  1px#b3a190;
     border: 1px solid #cb8241;
 }
 
+
+.label-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.label-input label{
+    width: 50px;
+    color: white;
+    margin-right: 10px;
+    /* height: 30px; */
+}
+.login-email{
+    width: 70%;
+    flex: 1;
+}
+
+
+.pass{
+    width: 70%;
+    flex: 1;
+}
 .another-choice{
     display: flex;
     justify-content: space-between;
@@ -399,11 +423,12 @@ section{
 }
 
 
+
 /* button */
 .container-btn{
     background-color: transparent;
-    position: fixed;
-    top: 40%;
+    position: absolute;
+    top: 200px;
     padding: 20px;
     width: 100%;
     display: flex;
@@ -438,4 +463,36 @@ section{
 .button-login:hover:active ,.button-singnin:hover:active{
     background-color: #1d150e;
     color: white;
+}
+
+
+
+
+/* remember pass */
+.order{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order div{
+    margin-left: 60px;
+}
+
+.order a{
+    margin-right: 8px;
+    color: black;
+}
+
+
+/* login mai */
+.mai,.pass{
+    height: 35px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.pass{
+
 }
