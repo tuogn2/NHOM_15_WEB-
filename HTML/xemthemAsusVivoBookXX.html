@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
+        </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+       <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Laptop Asus VivoBook X415EA i3</span>
+                <hr>
+                <img src="../IMG/laptopmongnhe/laptopmongnhe2.png" alt="">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 24 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <span><b><span style="color: blue;">Laptop Asus VivoBook X415EA i3</span>  được thiết kế màn hình viền mỏng 14 inch sở hữu độ phân giải Full HD (1920 x 1080) 
+                            cùng độ sáng màn hình 250 nits cho phép người dùng tận hưởng những hình ảnh chân thật, rõ nét ở những nơi có điều kiện 
+                            ánh sáng bình thường như trong nhà, phòng học,... nhưng vẫn tiết kiệm đáng kể điện năng tiêu thụ nhờ công nghệ LED Backlit.</b></span>
+                        <img src="../IMG/laptopmongnhe/laptopmongnhe3.1.jpeg" alt="">
+                        <div class="text1" style="display: none;">
+                        <h3>
+                            Đắm chìm trong thế giới hình ảnh sắc nét
+                        </h3>
+                        <p>
+                            Với cấu trúc 2 nhân 4 luồng, chip Intel Core i3 Tiger Lake 1115G4 sở hữu 2 nhân 4 luồng được sản xuất trên 
+                            tiến trình công nghệ 10 nm SuperFin sở hữu tốc độ xung nhịp cơ bản 3.00 GHz và đạt tối đa lên đến 4.1 GHz 
+                            nhờ Turbo Boost, hỗ trợ bạn hoàn thành những công việc với Word, Excel,... trong thời gian nhanh chóng cùng hiệu quả hoàn mỹ.
+                    </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe9.jpg" alt="">
+                    <p>
+                        Phiên bản laptop Asus này sở hữu độ dày 19.9 mm và khối lượng 1.55 kg, 
+                        được chế tác từ chất liệu nhựa bền bỉ cho phép bạn dễ dàng mang theo trong balo, 
+                        di chuyển đến bất kỳ địa điểm nào mà không lo quá cồng kềnh, chiếm diện tích, 
+                        đáp ứng nhu cầu công việc hay giải trí cả khi đang di chuyển.
+                    </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe10.jpg" alt="">
+                    <p>
+                        Chiếc laptop này còn sở hữu các cổng kết nối hiện đại dọc hai bên máy như: USB 3.2, 2 cổng USB 2.0, HDMI, 
+                        Jack tai nghe 3.5 mm và USB Type-C hỗ trợ người dùng truyền xuất dữ liệu nhanh chóng chỉ trong vài giây, 
+                        nâng cao hiệu quả làm việc của bạn.
+                    </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe11.jpg" alt="">
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                         </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <hr>
+                    <div class="box">
+                        <div class="color1">
+                            <a href="#">Xanh</a>
+                        </div>
+                        <div class="color2">
+                            <a href="#">Đen</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Giá tại: <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span style="color: red; font-weight: bold; font-size: 20px;">21.490.000₫ *</span>
+                         <span style="text-decoration: line-through; color: rgb(107, 106, 105); font-size: 20px;">40.590.000đ</span> 
+                        <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); ">Trả góp 0%</span>
+                    </p>
+                    </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <div class="tragop">
+                            <p><a href="#">Mua trả góp 0%<br>
+                                Duyệt hồ sơ trong 5 phút</a></p>
+                        </div>
+                        <div class="tragopquathe">
+                            <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                        </div>
+                    </div><hr>
+                    <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span>
+                <div class="address">
+                    <p>
+                        Chọn địa chỉ nhận hàng <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select> 
+                        để biết thời gian giao hàng.
+                    </p>
+                </div>                
+                <div class="configuration">
+                    <h2>Cấu hình Laptop Asus VivoBook X415EA i3</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>CPU:</td>
+                            <td>Intel, Core i3, 1115G4</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>8 GB (1 thanh 8 GB), DDR4, 3200 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>SSD 256 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Màn hình:</td>
+                            <td>14.0 inch, 1920 x 1080 Pixels, TN, 60 Hz, 220 nits, Anti-glare LED-backlit</td>
+                        </tr>
+                        <tr>
+                            <td>Đồ hoạ:</td>
+                            <td>Intel UHD Graphics</td>
+                        </tr>
+                        <tr>
+                            <td>Cổng kết nối:</td>
+                            <td>USB Type-CHDMIJack tai nghe 3.5 mm2 x USB 3.2</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Windows 11 Home</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế:</td>
+                            <td>Vỏ nhựa - chiếu nghỉ tay bằng kim loại</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước, khối lượng:</td>
+                            <td>325.4 x 216.0 x 19.9 cm mm, Nặng 1.6 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Thời điểm ra mắt:</td>
+                            <td>2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

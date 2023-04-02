@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
+        </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+       <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Laptop MSI Modern 14 B11MOU i3 </span>
+                <hr>
+                <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(1).jpg" alt="MSI">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Dây nguồn, Sách hướng dẫn, Thùng máy, Sạc Laptop MSI</p>
+                        <p>Bảo hành chính hãng laptop 24 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <b>Thu hút mọi ánh nhìn với lối thiết kế sang trọng</b>
+                        <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(2).jpg" alt="MSI">
+                        <div class="text1" style="display:none">
+                                <ul>
+                                    <li> <span style="color: blue;">Laptop MSI Modern 14 B11MOU i3 (1027VN)</span> là phiên bản laptop phổ thông được nhà MSI cho ra mắt với sứ mệnh phục vụ tốt mọi tác vụ thiết 
+                                        yếu cơ bản hằng ngày của người dùng khi sở hữu cấu hình ổn định đến từ con chip Intel Gen 11 cùng ngoại hình trang nhã, thời thượng và 
+                                        mang tính di động cao..
+                                        <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(3).jpg" alt="MSI">
+                                    </li><br>
+                                        
+                                    <li>
+                                        Lớp vỏ kim loại bền chắc có gam màu xám chủ đạo đã toát lên vẻ sang trọng và thời thượng cho laptop MSI Modern, giúp cho chủ nhân sở hữu nó nổi bật hơn hẳn dù làm việc 
+                                        trong văn phòng hay những quán cafe đông người. Độ linh hoạt được hoàn thiện đáng kể khi máy sở hữu khối lượng chỉ vỏn vẹn 1.3 kg, cho phép bạn di chuyển đến bất cứ mọi không 
+                                        gian bạn muốn mà không lo cồng kềnh, nặng nhọc.
+                                        <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(4).jpg" alt="MSI">
+                                    </li><br>
+                                    <li> 
+                                        Các thông tin và dữ liệu được truyền tải nhanh chóng và dễ dàng hơn đến các thiết bị ngoại vi tương thích như loa, chuột, máy chiếu,... mà không cần dùng cáp chuyển đổi phức tạp 
+                                        nhờ trang bị các cổng kết nối phổ biến dọc 2 bên laptop bao gồm 2 cổng USB 3.2, HDMI, Jack tai nghe 3.5 mm và USB Type-C.
+                                        <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(5).jpg" alt="MSI">
+                                    </li><br>
+                                    <li>
+                                        Sự kết hợp gần như là hoàn hảo giữa công nghệ Hi-Res Audio và hệ thống vòm Nahimic Audio 3D cho chất âm to rõ, xuất phát từ nhiều hướng khác nhau tạo nên những nốt thăng trầm sinh 
+                                        động nhất, cải thiện chất âm vượt trội với độ chuẩn xác cao đến từng chi tiết, đắm chìm người nghe vào nhưng tình khúc du dương hay những bộ phim gây cấn
+                                        <img src="../IMG/LaptopKyThuat/MSI/vi-vn-msi-modern-14(6).jpg" alt="MSI">
+                                    </li><br>
+                                    <li>
+                                        Nhìn chung, MSI Modern 14 B11MOU (1027VN) không hề kém cạnh bất cứ một đối thủ nào trong cùng phân khúc với lối thiết kế thời thượng, hiện đại cùng cấu hình ổn định và mức giá vô 
+                                        cùng hợp lý, sẽ là một trợ thủ đắc lực cho mọi nhu cầu thiết yếu của người dùng. 
+                                    </li><br>
+                                </ul>  
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                    <script>
+                        var showMoreButton = document.getElementById("show-more");
+                        var hiddenText = document.querySelector(".text1");
+                        var paragraph = document.querySelector(".Paragraph");
+               
+                        showMoreButton.addEventListener("click", function() {
+                           if (hiddenText.style.display === "none") {
+                              hiddenText.style.display = "block";
+                              paragraph.style.height = "auto";
+                              showMoreButton.textContent = "Thu gọn";
+                           } else {
+                              hiddenText.style.display = "none";
+                              paragraph.style.height = "50px";
+                              showMoreButton.textContent = "Xem thêm";
+                           }
+                        });
+                     </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <hr>
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">15.990.000₫*</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                </div>
+                <!-- <div id="button-Soluong">
+                    <label for="quantity">Số lượng:</label>
+                            <div class="quantity-input">
+                            <button class="decrement-button"style="border-color: antiquewhite;">-</button>
+                            <input type="number" name="quantity" id="quantity" value="1" min="1" style="background-color: antiquewhite;">
+                            <button class="increment-button" style="border-color: antiquewhite;">+</button>
+                            </div>
+                    <script>
+                            const decrementButton = document.querySelector(".decrement-button");
+                            const incrementButton = document.querySelector(".increment-button");
+                            const quantityInput = document.querySelector("#quantity");
+
+                            decrementButton.addEventListener("click", function() {
+                            let currentValue = Number(quantityInput.value);
+                            if (currentValue > 1) {
+                                currentValue--;
+                                quantityInput.value = currentValue;
+                            }
+                            });
+
+                            incrementButton.addEventListener("click", function() {
+                            let currentValue = Number(quantityInput.value);
+                            currentValue++;
+                            quantityInput.value = currentValue;
+                            });
+                    </script>
+                </div> -->
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                </p>
+                </div>
+                <div class="configuration">
+                    <h2>Cấu hình Laptop MSI Laptop MSI Modern 14 B11MOU i3 1115G4/8GB/256GB</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>CPU:</td>
+                            <td>i3, 1115G4, 3GHz</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>8 GBDDR4 2 khe (1 khe 8 GB + 1 khe rời)3200 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>
+                                256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB)</td>
+                        </tr>
+                        <tr>
+                            <td>Màn hình:</td>
+                            <td>14", Full HD (1920 x 1080)</td>
+                        </tr>
+                        <tr>
+                            <td>Card màn hình:</td>
+                            <td>Card tích hợpIntel UHD</td>
+                        </tr>
+                        <tr>
+                            <td>Cổng kết nối:</td>
+                            <td>USB Type-C, HDMI, Jack tai nghe 3.5 mm, 2 x USB 3.2</td>
+                        </tr>
+                        <tr>
+                            <td>Đặc biệt:</td>
+                            <td>Có đèn bàn phím</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Windows 11 Home SL</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế:</td>
+                            <td>Vỏ kim loại</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước, khối lượng:</td>
+                            <td>Dài 319 mm - Rộng 219 mm - Dày 18.1 mm - Nặng 1.3 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Thời điểm ra mắt:</td>
+                            <td>2021</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

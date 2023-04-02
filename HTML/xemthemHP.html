@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper">
+            <header class="header">
+                <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+        
+                <nav class="navbar">
+                    <a href="#home">Trang chủ</a>
+                    <a href="#home">Giới thiệu</a>
+                    <a href="#event">Sự kiện</a>
+                    <a href="#product">Sản phẩm</a>
+                    <a href="#review">Đánh giá</a>
+                </nav>
+        
+                <div class="icons">
+                    <div class="fas fa-bars" id="menu-btn"> </div>
+                    <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                    <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                        <div class="fas fa-user" id="login-btn"></div>
+                </div>
+        
+                
+                <!-- Trang chủ --> 
+            </header>
+            <div class="event">
+        
+            </div>
+            <section class="home" id="home">
+                <div class="content">
+                    <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                    <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                    <a href="#" class="btn">Mua ngay</a>
+                </div>
+           </section>
+        
+           <!-- sự kiện -->
+           <section class="event" id="event">
+            <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+           <div class="box-container">
+                <div class="box">
+                    <img src="./IMG/khuyenmai.jpg" alt="">
+                </div>
+        
+            </div>
+        </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Laptop HP Pavilion 15 eg2034TX i7</span>
+                <hr>
+                <img src="../IMG/LaptopKyThuat/Hp/hp-pavilion-15-eg2034tx-i7(1).jpg" alt="MSI">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 12 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                            <span style="font-weight: bold;"><span style="color:blue;">Đây là 1 Laptop</span> 
+                                hứa hẹn sẽ là một đối thủ đáng quan ngại trong phân khúc <span style="color:blue">
+                                laptop học tập - văn phòng</span> khi sở hữu cấu hình mạnh mẽ đến từ chip Intel Gen 12 
+                                </span>
+                        <img src="../IMG/LaptopKyThuat//Hp/hp-pavilion-15-eg2034tx-i7(2).jpg" alt="MSI">
+                        <div class="text1" style="display: none;">
+                            <p>
+                                <ul>
+                                    <li> Bộ vi xử lý <b>Intel Core i7 Alder Lake 1255U</b> giải quyết tất tần tật mọi tác vụ học tập, 
+                                        văn phòng từ cơ bản đến nâng cao một cách nhanh chóng, đồng thời cân tốt các công việc thiết kế đồ họa, 
+                                        chỉnh ảnh,... nhờ card rời <b>NVIDIA GeForce MX 550 2 GB</b>.
+                                        <img src="../IMG/LaptopKyThuat//Hp/hp-pavilion-15-eg2034tx-i7(3).jpg" alt="">
+                                    </li><br>
+                                    <li>Bộ nhớ <b>RAM 8 GB</b> cho phép người dùng hoạt động cùng lúc nhiều cửa sổ ứng dụng khác nhau nhưng vẫn mượt 
+                                        mà, ổ cứng <b>SSD 512 GB NVMe PCIe</b> cho tốc độ khởi động máy nhanh chóng hơn chỉ trong vài giây.</li><br>
+                                    <li> Kích thước màn hình <b>15.6 inch</b> cùng tấm nền <b>IPS</b> cho góc nhìn rộng rãi lên đến 178 độ, bên cạnh đó cũng mang đến khung ảnh sắc nét, 
+                                        sinh động hơn nhờ <b>laptop HP</b> trang bị độ phân giải <b>Full HD, công nghệ BrightView</b> cùng tần số quét <b>60 Hz</b>. </li><br>
+                                    <li>Trọn vẹn phút giây thư giãn tuyệt vời nhờ sự kết hợp giữa công nghệ <b>Bang & Olufsen audio</b> và <b>HP Audio Boost</b>, mang đến chất lượng âm 
+                                        thanh chân thực, sống động với độ khuếch đại cao và rõ nét trên từng nốt thăng trầm.</li><br>
+                                    <li>Các cổng kết nối như USB 3.2, HDMI, Jack tai nghe 3.5 mm và USB Type-C được trang bị trên laptop mang đến khả năng liên kết nhanh chóng và dễ dàng hơn.</li><br>
+                                    <li>Cảm giác cầm nắm được chắc chắn hơn, không ọp ẹp nhờ lớp <b>vỏ nhựa</b> cùng chiếu nghỉ tay bằng kim loại cứng cáp, <b>laptop HP Pavilion</b> có khối lượng <b>1.74 kg</b> dễ dàng 
+                                        cất vào balo và cùng bạn làm việc ở mọi nơi.</li><br>
+                                </ul>
+                            </p>
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                    <script>
+                        var showMoreButton = document.getElementById("show-more");
+                        var hiddenText = document.querySelector(".text1");
+                        var paragraph = document.querySelector(".Paragraph");
+               
+                        showMoreButton.addEventListener("click", function() {
+                           if (hiddenText.style.display === "none") {
+                              hiddenText.style.display = "block";
+                              paragraph.style.height = "auto";
+                              showMoreButton.textContent = "Thu gọn";
+                           } else {
+                              hiddenText.style.display = "none";
+                              paragraph.style.height = "50px";
+                              showMoreButton.textContent = "Xem thêm";
+                           }
+                        });
+                     </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <hr>
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">24.590.000₫</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                <!-- <a href="#"><img src="../IMAGE/Laptop Ky Thuat/Hp/discoutonline.jpg" alt="Sự Kiện laptop"></a> -->
+                </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                </p>
+                </div>
+                <div class="configuration">
+                    <h2>Cấu hình Laptop HP Pavilion 15 eg2034TX i7 1255U/8GB/512GB</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>CPU:</td>
+                            <td>i7, 1255U, 1.7GHz</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>8 GBDDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)3200 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>512 GB SSD NVMe PCIe</td>
+                        </tr>
+                        <tr>
+                            <td>Màn hình:</td>
+                            <td>15.6"Full HD (1920 x 1080)</td>
+                        </tr>
+                        <tr>
+                            <td>Card màn hình:</td>
+                            <td>Card rờiMX550 2GB</td>
+                        </tr>
+                        <tr>
+                            <td>Cổng kết nối:</td>
+                            <td>USB Type-CHDMIJack tai nghe 3.5 mm2 x USB 3.2</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Windows 11 Home SL</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế:</td>
+                            <td>Vỏ nhựa - chiếu nghỉ tay bằng kim loại</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước, khối lượng:</td>
+                            <td>Dài 360.2 mm - Rộng 234 mm - Dày 17.9 mm - Nặng 1.74 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Thời điểm ra mắt:</td>
+                            <td>2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

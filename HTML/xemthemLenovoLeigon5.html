@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
+        </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+        </section>
+        <div class="maincontent" >
+            <div class="content">
+                <span style="font-size: 28px;">Laptop Lenovo Legion 5 15IAH7 i5 </span>
+                <hr>
+                <img src="../IMG/LaptopKyThuat/Lenovo/vi-vn-lenovo-legion-5-15iah7-i5(1).jpg" alt="">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 36 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <p>
+                    <b><span style="color: blue">Laptop Lenovo Legion 5 15IAH7 i5 12500H</span> gây ấn tượng bởi lối thiết 
+                        kế đậm chất thể thao, mạnh mẽ với khả năng vận hành mượt mà mọi tựa game từ nhẹ đến nặng, giúp các cao 
+                        thủ chiến game đầy tự tin và tận hưởng những giây phút đỉnh cao trong chiến trường ảo.</b>
+                        </p>
+                        <img src="../IMG/LaptopKyThuat/Lenovo/vi-vn-lenovo-legion-5-15iah7-i5(2).jpg" alt="lenovo-legion-5-15iah7-i5">
+                        <div class="text1" style="display: none;">
+                            <img src="../IMG/LaptopKyThuat/Lenovo/vi-vn-lenovo-legion-5-15iah7-i5(3).jpg" alt="lenovo-legion-5-15iah7-i5">
+                    <p>
+                        Bên trong chiếc <b>Laptop gaming</b> này ẩn chứa một con quái vật đến từ bộ vi xử lý <b>Intel Core i5 12500H</b>, tăng hiệu 
+                        suất lên đến <b>40%</b> so với thế hệ trước. Card rời RTX 30 series - <b>NVIDIA GeForce RTX 3050Ti 4 GB</b> hỗ trợ bạn chiến 
+                        mượt mà các tựa game như LOL, PUBG, CS:GO,... cũng như có thể xử lý hoàn hảo các tác vụ đồ họa về hình ảnh và 
+                        video.Laptop <b>RAM 8 GB</b> cho phép bạn chuyển đổi qua lại nhiều ứng dụng cùng lúc, vừa nghe nhạc Remix vừa chiến game mà không 
+                        xảy ra hiện tượng giật lag, nâng cao hiệu suất làm việc với tốc độ <b>Bus RAM 4800 MHz</b> và hỗ trợ nâng cấp RAM tối đa lên đến <b>16 GB</b>.
+                    </p>
+                    <p>
+                        <b>Laptop Lenovo</b> có hệ thống <b>đèn bàn phím chuyển màu RGB</b> tăng cảm hứng trong cả công việc và giải trí, hỗ trợ bạn dễ dàng thao tác trong môi trường 
+                        thiếu ánh sáng mà không lo ấn nhầm phím làm ảnh hưởng đến kết quả trận đấu.
+                    </p>
+                    <img src="../IMG/LaptopKyThuat/Lenovo/vi-vn-lenovo-legion-5-15iah7-i5(4).jpg" alt="lenovo-legion-5-15iah7-i5">
+                    <p>
+                        <b>Laptop</b> sở hữu màn hình 15.6 inch độ phân giải Full HD (1920 x 1080) cùng các công nghệ tiên tiến như chống chói Anti Glare, tấm nền IPS và độ sáng cao 300 nits 
+                        cho trải nghiệm hình ảnh rõ nét, góc nhìn được mở rộng lên đến 178 độ, bảo vệ thị giác khi bạn chơi game trong thời gian dài. 
+                    </p>
+                    <img src="../IMG/LaptopKyThuat/Lenovo/vi-vn-lenovo-legion-5-15iah7-i5(5).jpg" alt="lenovo-legion-5-15iah7-i5">
+                    <p>
+                        Chất lượng hình ảnh trực tuyến khi giải trí và học tập được nâng cao nhờ <b>Full HD Webcam</b>, bạn hoàn toàn có thể vừa chiến game vừa livestream cho bạn bè cùng xem với những 
+                        hình ảnh sắc nét nhất.
+                    </p>
+                    </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                         </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <hr>
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">35.490.000₫ *</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                </div>
+            
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <div class="tragop">
+                            <p><a href="#">Mua trả góp 0%<br>
+                                Duyệt hồ sơ trong 5 phút</a></p>
+                        </div>
+                        <div class="tragopquathe">
+                            <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                        </div>
+                    </div>
+                    <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                    </p>
+                </div>
+                <div class="configuration" >
+                    <h2>Cấu hình Laptop Lenovo Legion 5 15IAH7 i5 12500H/8GB/512GB/4GB</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>CPU:</td>
+                            <td>i5, 12500H, 2.5GHz</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>8 GB, DDR5 2 khe (1 khe 8 GB + 1 khe trống), 4800 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB (2280) / 512 GB (2242))</td>
+                        </tr>
+                        <tr>
+                            <td>Card màn hình:</td>
+                            <td>Card rờiRTX 3050Ti 4GB</td>
+                        </tr>
+                        <tr>
+                            <td>Cổng kết nối:</td>
+                            <td>1 x Thunderbolt 4 (hỗ trợ DisplayPort)HDMILAN (RJ45)Jack tai nghe 3.5 mm1 x USB 3.2 (Always on)2 
+                                x USB 3.21 x USB-C 3.2 Gen 2 (hỗ trợ truyền dữ liệu and DisplayPort 1.4)1 x USB-C 3.2 Gen 2 (hỗ 
+                                trợ truyền dữ liệu, Power Delivery 135W and DisplayPort 1.4)</td>
+                        </tr>
+                        <tr>
+                            <td>Đặc biệt:</td>
+                            <td>Có đèn bàn phím</td>
+                        </tr>
+                        <tr>
+                            <td>CPU</td>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Windows 11 Home SL</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế:</td>
+                            <td>Vỏ nhựa - nắp lưng bằng kim loại</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước, khối lượng:</td>
+                            <td>Dài 358.8 mm - Rộng 262.35 mm - Dày 19.99 mm - Nặng 2.35 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Thời điểm ra mắt:</td>
+                            <td>2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

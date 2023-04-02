@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#home">Giới thiệu</a>
+                <a href="#event">Sự kiện</a>
+                <a href="#product">Sản phẩm</a>
+                <a href="#review">Đánh giá</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                    <div class="fas fa-user" id="login-btn"></div>
+            </div>
+    
+            
+            <!-- Trang chủ --> 
+        </header>
+        <div class="event">
+    
+        </div>
+        <section class="home" id="home">
+            <div class="content">
+                <h3> Những sản phẩm <span>chất lượng</span> cho bạn</h3>
+                <p>Bắt kịp xu hướng, dẫn lối thành công</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+       </section>
+    
+       <!-- sự kiện -->
+       <section class="event" id="event">
+        <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
+       <div class="box-container">
+    
+            <div class="box">
+                <img src="./IMG/khuyenmai.jpg" alt="">
+            </div>
+    
+        </div>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Laptop Asus Zenbook 13 Oled UX325</span>
+                <hr>
+                <img src="../IMG/laptopmongnhe/laptopmongnhe7.jpg" alt="">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 24 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <span><b>
+                            <span style="color: blue;">Laptop Asus Zenbook 13 Oled UX325</span>  Được trang bị màn hình OLED cùng hiệu năng lý tưởng, 
+                            thiết kế mỏng gọn & nhẹ hơn với đầy đủ cổng kết nối HDMI, Thunderbolt<sup>TM</sup> 4 USB-C®, 
+                            USB Type-A và đầu đọc thẻ MicroSD cho sức mạnh linh hoạt vượt trội. 
+                            Màn hình 4 viền NanoEdge siêu mỏng cho tỉ lệ hiển thị 88% kết hợp cùng công nghệ OLED trên Zenbook 
+                            13 OLED UX325 giúp đưa hình ảnh lên một cấp độ chân thực mới với màu sắc được PANTONE xác nhận, 
+                            gam màu bao phủ 100% tiêu chuẩn điện ảnh DCI-P3 và màu đen True Black.
+                        </b></span>
+                        <img src="../IMG/laptopmongnhe/laptopmongnhe8.jpg" alt="">
+                        <div class="text1" style="display: none;">
+                        <h3>
+                            Đắm chìm trong thế giới hình ảnh sắc nét
+                        </h3>
+                        <p>
+                            Nhờ công nghệ OLED, những chiếc máy tính xách tay của ASUS đem đến trải nghiệm hình ảnh tuyệt vời, 
+                            chân thực và chi tiết xuất sắc với độ bao phủ 100% dải màu DCI-P3 chuẩn điện ảnh, 133% dải màu sRGB và 100% dải màu adobe RGB. 
+                            Ngoài ra, đối với những ai cần cho mình một màn hình chuyên nghiệp để làm việc thì cũng có thể yên tâm rằng những màn hình này
+                            đều được chứng nhận về màu sắc bởi PANTONE.
+                        </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe13.jpg" alt="">
+                    <p>
+                        Bằng cách hiệu chỉnh quang phổ và nhờ bản chất phát sáng tự nhiên của công nghệ màn hình OLED, 
+                        lượng ánh sáng xanh trên những mẫu máy tính xách tay trang bị màn hình OLED của ASUS đã được giảm đến 70% giúp máy 
+                        đạt chứng nhận bảo vệ mắt của TÜV Rheinland và SGS mà vẫn giữ lại được độ chính xác của màu sắc.
+                    </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe14.jpg" alt="">
+                    <p>
+                        Công nghệ OLED đem lại thời gian phản hồi chỉ 0.2ms, nhanh hơn cả màn hình tốt nhất của máy tính xách tay dành cho game thủ. 
+                        Nếu so sánh thời gian phản hồi này với thời gian phản hồi của những máy tính xách tay sử dụng LCD truyền thống thì nó sẽ nhanh 
+                        hơn đến 50 lần. Nhờ tốc độ cực nhanh này mà những cảnh hành động nhịp độ nhanh sẽ mượt mà hơn hoặc thậm chí những thao tác đơn 
+                        giản hằng ngày khi làm việc như cuộn chuột văn bản sẽ trơn tru và không gây ra hiện tượng mờ chữ.
+                    </p>
+                    <img src="../IMG/laptopmongnhe/laptopmongnhe15.jpg" alt="">
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                         </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <hr>
+                    <div class="box">
+                        <div class="color1">
+                            <a href="#">Xanh</a>
+                        </div>
+                        <div class="color2">
+                            <a href="#">Đen</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Giá tại: <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span style="color: red; font-weight: bold; font-size: 20px;">23.990.000₫ *</span>
+                         <span style="text-decoration: line-through; color: rgb(107, 106, 105); font-size: 20px;">35.590.000đ</span> 
+                        <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); ">Trả góp 0%</span>
+                    </p>
+                    </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <div class="tragop">
+                            <p><a href="#">Mua trả góp 0%<br>
+                                Duyệt hồ sơ trong 5 phút</a></p>
+                        </div>
+                        <div class="tragopquathe">
+                            <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                        </div>
+                    </div><hr>
+                    <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span>
+                <div class="address">
+                    <p>
+                        Chọn địa chỉ nhận hàng <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select> 
+                        để biết thời gian giao hàng.
+                    </p>
+                </div>                
+                <div class="configuration">
+                    <h2>Cấu hình Laptop Asus Zenbook 13 Oled UX325</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>CPU:</td>
+                            <td>Intel, Core i5, 1135G7</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>8 GB, LPDDR4, 4267 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>SSD 512 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Màn hình:</td>
+                            <td>13.3 inch, 1920 x 1080 Pixels, OLED, 60 Hz, 500 nits, OLED</td>
+                        </tr>
+                        <tr>
+                            <td>Đồ hoạ:</td>
+                            <td>Intel Iris Xe Graphics</td>
+                        </tr>
+                        <tr>
+                            <td>Cổng kết nối:</td>
+                            <td>USB Type-CHDMIJack tai nghe 3.5 mm2 x USB 3.2</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Windows 11 Home Single Language</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế:</td>
+                            <td>Vỏ nhựa - chiếu nghỉ tay bằng kim loại</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước, khối lượng:</td>
+                            <td>304.1 x 203 x 13.9 mm, Nặng 1.1 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Thời điểm ra mắt:</td>
+                            <td>2021</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

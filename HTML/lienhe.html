@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../CSS/lienhe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
+
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./gioithieu.html">Giới thiệu</a>
+            <a href="./index-sukien.html">Sự kiện</a>
+            <a href="./sanpham.html">Sản phẩm</a>
+            <a href="./lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"> </div>
+            <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+            <!-- CART LAYOUT -->
+            <a href="./cart.html"><div class="fas fa-shopping-cart" id=""></div></a>
+            <a href="./loginform.html"><div class="fas fa-user" id="login-btn"></div></a>
+        </div>
+
+
+        <!-- Trang chủ -->
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+            <form action="">
+                <h3>Bạn cần hỗ trợ?</h3>
+                <p>Laptop-Star rất hân hạnh hạnh hỗ trợ bạn <br>
+                Hãy để lại thông tin chi tiết cho chúng tôi <br>
+                Yêu cầu của bạn sẽ được xử lý và phản hồi trong thời gian sớm nhất</p>  
+                <table>
+                    <tr>
+                        <td><label for="hoten">Họ tên:*</label></td>
+                        <td><input type="text" placeholder="Nhập tên của bạn" id="hoten"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email:*</label></td>
+                        <td><input type="email" placeholder="Nhập email của bạn" id="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="tinnhan">Tin nhắn:*</label></td>
+                        <td><textarea name="" id="tinnhan" cols="30" rows="5" placeholder="Bạn cần gì?"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Gửi" class="submit"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vi</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
+            </div>
+        </div>
+   </section>
+
+
+</body>
+
+</html>
