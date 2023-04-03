@@ -112,7 +112,7 @@ section{
     display: none;
 }
 
-.home{
+/* .home{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@ section{
 
 .home .content a:hover{
     background-color: var(--orange);
-}
+} */
 
 .heading{
     font-size: 25px;
@@ -148,12 +148,15 @@ section{
 .maincontent{
     min-height: 1140px;
     display: flex;
+    margin-top: 100px;
+
 }
 .maincontent .content img{
     width: 600px;
 }
 .content{
     flex-basis: 50%;
+    
 }
 .sidebar{
     flex-basis: 50%;
