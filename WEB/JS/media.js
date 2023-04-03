@@ -1,9 +1,6 @@
-@media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
+let navbar = document.querySelector('.navbar');
 
-    .header{
-        padding: 2rem;
-    }
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
 }
+

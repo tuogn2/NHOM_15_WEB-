@@ -78,7 +78,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 9%;
+    padding: 10px 9%;
     background: #fff;
     box-shadow: var(--box-shadow);
 }
@@ -312,7 +312,7 @@ section{
 .event .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
-    padding: 10px;
+    padding: 50px;
     border-radius: 10px;
     gap: 15px;
 }
@@ -424,11 +424,16 @@ section{
 
     .header .navbar{
         position: absolute;
-        top: 100%; right: 2rem;
+        top: 100%; right: -500px;
         width: 25rem;
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
         background-color: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
     }
 
     .header .navbar a{
