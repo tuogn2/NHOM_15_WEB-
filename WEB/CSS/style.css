@@ -521,3 +521,12 @@ section{
     background: var(--orange);
 }
 
+.myForm input[type=submit]{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--orange);
+}
+
+.myForm .error{
+    color: red;
+}

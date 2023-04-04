@@ -322,7 +322,7 @@
 
     <!-- modal -->
     <div class="container-modal">
-        <button type="button" class="btn mess-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        <button type="button" class="btn mess-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 data-bs-whatever="@mdo">
                 <div class="fas fa-comments" class="mess-btn"> Liên hệ với chúng tôi</div>
         </button>
@@ -342,28 +342,33 @@
                                 <img src="../IMG/nhanvienlienhe.png" alt="">
                             </div>
                             <div class="col">
-                                <form>
+                                <form class="myForm">
                                     <div class="mb-3">
                                         <label for="name" class="col-form-label">Name: </label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn">
+                                        <input type="text" class="form-control name" id="name" placeholder="Nhập tên của bạn">
+                                        <span class="error errorName"></span>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="email" class="col-form-label" >Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+                                        <input type="email" class="form-control email" id="email" placeholder="Nhập email của bạn">
+                                        <span class="error errorEmail"></span>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text" rows="5" placeholder="Bạn cần gì?"></textarea>
+                                        <label for="message-text" class="col-form-label ">Message:</label>
+                                        <textarea class="form-control mess" id="message-text" rows="5" placeholder="Bạn cần gì?"></textarea>
+                                        <span class="error errorMess"></span>
                                     </div>
+
+                                    <input type="submit" class="submit" value="Submit"> </input>
                             </div>
                             </form>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button"  data-bs-dismiss="modal">Close</button>
-                        <button type="button" >Send message</button>
+                        
                     </div>
                 </div>
             </div>
@@ -408,6 +413,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/media.js"></script>
     <script src="../JS/search.js"></script>
+    <script src="../JS/lienhe.js"></script>
 </body>
 
 </html>
