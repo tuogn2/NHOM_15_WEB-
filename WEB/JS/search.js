@@ -1,7 +1,7 @@
 var ble=true;
 const handleclicksearch = () => {
     const event = document.getElementsByClassName('event');
-
+    console.log("hi")
    if(ble){
 
        event[0].innerHTML = `<div class="search"> 
