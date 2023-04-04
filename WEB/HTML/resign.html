@@ -9,8 +9,15 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>LOGIN</title>
-  <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/login.css">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(".header").load("./header.html");
+            $(".footer").load("./footer.html");
+        }) 
+    </script>
 
 </head>
 
@@ -19,29 +26,9 @@
         <a href="./index.html"><i class="fa-solid white fa-arrow-left"></i></a>
     </div> -->
     <header class="header">
-        <a href="#" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
-
-        <nav class="navbar">
-            <a href="./index.html">Trang chủ</a>
-            <a href="./gioithieu.html">Giới thiệu</a>
-            <a href="#event">Sự kiện</a>
-            <a href="#product">Sản phẩm</a>
-            <a href="./lienhe.html">Liên hệ</a>
-        </nav>
-
-        <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"> </div>
-            <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
-            <div class="fas fa-shopping-cart" id="cart-btn"> </div>
-            <a href="./loginform.html">
-                <div class="fas fa-user" id="login-btn"></div>
-            </a>
-        </div>
-
-
-
+      
     </header>
-   
+
     <div class="container">
         <div class="login-container">
             <form action="" name='submit' class="form-login">
@@ -49,21 +36,27 @@
                 <div class="form-infor">
                     <div class="label-input">
                         <label for="mail">Email</label>
-                        <input type="email" id="mail" class="login-email" placeholder="email">
+                        <input type="email" id="mail" class="login-email"  placeholder="email"> 
                     </div>
+                    <div class="checkformemail" style="margin-top: -10px; color: rgb(8, 107, 75);"></div>
                     <div class="label-input">
                         <label for="username">User Name</label>
-                        <input type="text" id="username" class="login-email" placeholder="Name">
+                        <input type="text" id="username" class="login-email"  placeholder="Name">
                     </div>
-                   
+                    <div class="checkusername" style="margin-top: -10px; color: rgb(8, 107, 75);"></div>
+
                     <div class="label-input">
                         <label for="pass">Pass</label>
                         <input type="password" id="pass" placeholder="Enter Password" class="login-pass signin">
                     </div>
+                    <div class="checkpass" style="margin-top: -10px; color: rgb(8, 107, 75);"></div>
+
                     <div class="label-input">
                         <label for="">repeat pass</label>
-                        <input type="password" placeholder="repeat again" value="" class="login-pass repeapsignin">
+                        <input type="password" placeholder="repeat again" id="prepeatpass" class="login-pass repeapsignin">
                     </div>
+                    <div class="checkpass" style="margin-top: -10px; color: rgb(8, 107, 75); text-align: left; "></div>
+
                     <div class="order">
                         <div>
                             <input type="checkbox">
@@ -71,8 +64,8 @@
                         </div>
                         <a href="#"><span>Forgot password?</span></a>
                     </div>
-                    <button onclick={checkpass()} class="btnlogin btnsignin">SIGN IN</button>
-                   
+                    <button onclick="checkform()" class="btnlogin btnsignin submit">SIGN IN</button>
+
                 </div>
             </form>
         </div>
@@ -81,40 +74,10 @@
 
 
     <section class="footer">
-        <div class="box-container">
-
-            <div class="box">
-                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
-                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
-                <div class="share">
-                    <a href="" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"> </a>
-                    <a href="" class="fab fa-instagram"> </a>
-
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>Thông tin liên hệ: </h3>
-                <a href="" class="links"> <i class="fas fa-phone"> </i> +0123785660</a>
-                <a href="" class="links"> <i class="fas fa-phone"> </i> +123456789</a>
-                <a href="" class="links"> <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
-                <a href="" class="links"> <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ
-                    Chí Minh</a>
-            </div>
-
-            <div class="box">
-                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
-                <p>21046361 Trần Thị Thúy Vy</p>
-                <p>21129041 Đỗ Chí Tường</p>
-                <p>21000505 Trương Công Anh Vĩ</p>
-                <p>20003435 Trương Thị Tường Vi</p>
-                <p>21026071 Đặng Minh Vương</p>
-                <p>21014021 Võ Nguyên Vũ </p>
-            </div>
-        </div>
     </section>
-    <script src="../JS/login.js"></script>
+    <script src="../JS/search.js"></script>
+    <script src="../JS/resign.js"></script>
+
 </body>
 
 </html>

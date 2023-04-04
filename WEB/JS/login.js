@@ -3,6 +3,8 @@ const containerbtn = document.querySelector(".container-btn");
 const password = document.querySelector(".signin");
 
 const againpasswprd = document.querySelector(".repeapsignin");
+var checkformemail =document.getElementsByClassName('checkformemail')
+
 function handleclickLogin() {
   containerbtn.innerHTML = "";
   container.innerHTML = `
@@ -36,21 +38,4 @@ var txtemail = "";
 var txtusername = "";
 var txtpass = "";
 
-const checkpass = () => {
-  const emai = document.getElementById("mail");
-  const username = document.getElementById("#username");
 
-  if (password.value.length < 6) {
-    alert("pass phải lớn hơn 6");
-    return;
-  } else if (againpasswprd.value.length !== password.value.length) {
-    alert("mật khẩu mà nhập lại mật khẩu không trùng khớp");
-    return;
-  }
-
-  txtemail = emai.value
-  txtusername = username.value
-  txtpass = password.value
-
-
-};
