@@ -98,11 +98,27 @@ section{
     font-size: 17px;
     margin: 0 10px;
     color: var(--black);
-    text-decoration: none;
 }
+
 
 .header .navbar a:hover{
     color: var(--orange);
+}
+
+.header .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .icons button{
+    padding: 0;
+    border: 0;
+}
+
+.header .icons button{
+    padding: 0;
+    border: 0;
 }
 
 .header .icons div{
@@ -194,6 +210,18 @@ section{
     width: 100%;
     transition: all .3s ease;
 }
+
+
+.product .box-container .box span{
+    background-color: red;
+    font-size: 12px;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
 
 .product .box-container .box img:hover{
     transform: scale(1.1);
@@ -460,3 +488,27 @@ section{
         display: block;
     }
 }
+
+.modal .modal-content .modal-body .row .col img{
+    width: 100%;
+}
+
+.modal .modal-content{
+    width: 120%;
+}
+
+.modal label{
+    font-size: 12px;
+}
+
+.modal-footer button{
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.modal-footer button:hover{
+    color: white;
+    background: var(--orange);
+}
+

@@ -23,11 +23,15 @@
             <a href="./gioithieu.html">Giới thiệu</a>
             <a href="./index-sukien.html">Sự kiện</a>
             <a href="./sanpham.html">Sản phẩm</a>
-            <a href="./lienhe.html">Liên hệ</a>
         </nav>
 
         <div class="icons">
+
             <div class="fas fa-bars" id="menu-btn"> </div>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">
+                <div class="fas fa-comments" id="login-btn"></div>
+            </button>
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <!-- CART LAYOUT -->
             <a href="./cart.html">
@@ -36,6 +40,7 @@
             <a href="./loginform.html">
                 <div class="fas fa-user" id="login-btn"></div>
             </a>
+
         </div>
     </header>
 
@@ -59,10 +64,12 @@
                     <!-- 2400 900 -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../img/banner2.png" class="d-block w-100" alt="../IMG/laptopcaocap/laptopcaocap5.jpg">
+                            <img src="../img/banner2.png" class="d-block w-100"
+                                alt="../IMG/laptopcaocap/laptopcaocap5.jpg">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/sf-laptop-5.png" class="d-block w-100" alt="../IMG/laptopcaocap/laptopcaocap5.jpg">
+                            <img src="../img/sf-laptop-5.png" class="d-block w-100"
+                                alt="../IMG/laptopcaocap/laptopcaocap5.jpg">
                         </div>
 
 
@@ -131,31 +138,45 @@
     <section class="product" id="product">
         <h1 class="heading">Sản phẩm <span>Nổi bật</span></h1>
         <div class="box-container">
-            <div class="box">
-                <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-legion-5-15iah7-i5.jpg" alt="">
-                <h3>Lenovo-legion-5</h3>
-                <a href="" class="btn"> Xem thêm</a>
-            </div>
+            <a href="">
+                <div class="box">
+                    <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-legion-5-15iah7-i5.jpg" alt="">
+                    <h3>Lenovo-legion-5</h3>
+                    <img src="../IMG/sticker-1 (1).png" alt="">
+                    <h3>Giá: 45.990.000 <span>-15%</span></h3>
+                    <!-- <a href="" class="btn"> Xem thêm</a> -->
+                </div>
+            </a>
 
-            <div class="box">
-                <img src="../IMG/LaptopKyThuat/Hp/hp-pavilion-15-eg2034tx-i7.jpg" alt="">
-                <h3>Hp-pavilion-15</h3>
-                
-                <a href="" class="btn"> Xem thêm</a>
-            </div>
+            <a href="">
+                <div class="box">
+                    <img src="../IMG/LaptopKyThuat/Hp/hp-pavilion-15-eg2034tx-i7.jpg" alt="">
+                    <h3>Hp-pavilion-15</h3>
+                    <img src="../IMG/sticker-2.png" alt="">
+                    <h3>Giá: 45.990.000 <span>-15%</span></h3>
+                    <!-- <a href="" class="btn"> Xem thêm</a> -->
+                </div>
+            </a>
 
-            <div class="box">
-                <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c.jpg" alt="">
-                <h3>Apple-macbook-pro</h3>
-                
-                <a href="" class="btn"> Xem thêm</a>
-            </div>
+            <a href="">
+                <div class="box">
+                    <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c.jpg" alt="">
+                    <h3>Apple-macbook-pro</h3>
+                    <img src="../IMG/sticker-3.png" alt="">
+                    <!-- <a href="" class="btn"> Xem thêm</a> -->
+                    <h3>Giá: 45.990.000 <span>-15%</span></h3>
+                </div>
+            </a>
 
-            <div class="box">
-                <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-ideapad-5-pro.jpg" alt="">
-                <h3>Lenovo-ideapad-5 </h3>
-                <a href="" class="btn"> Xem thêm</a>
-            </div>
+            <a href="">
+                <div class="box">
+                    <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-ideapad-5-pro.jpg" alt="">
+                    <h3>Lenovo-ideapad-5 </h3>
+                    <img src="../IMG/sticker-4.png" alt="">
+                    <!-- <a href="" class="btn"> Xem thêm</a> -->
+                    <h3>Giá: 45.990.000 <span>-15%</span></h3>
+                </div>
+            </a>
 
 
         </div>
@@ -194,9 +215,9 @@
                     </div>
                 </div>
             </div> -->
-            <!-- Force next columns to break to new line -->
+        <!-- Force next columns to break to new line -->
 
-<!-- 
+        <!-- 
             <div class="col-4 col-sm-2">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="../IMG/laptopcaocap/laptopcaocap5.jpg" >
@@ -300,6 +321,53 @@
         </div>
 
     </section>
+
+    <!-- modal -->
+    <div class="container-modal">
+        
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img src="../IMG/nhanvienlienhe.png" alt="">
+                            </div>
+                            <div class="col">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="col-form-label">Name: </label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="email" class="col-form-label" >Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text" rows="5" placeholder="Bạn cần gì?"></textarea>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <section class="footer">
