@@ -28,10 +28,7 @@
         <div class="icons">
 
             <div class="fas fa-bars" id="menu-btn"> </div>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-bs-whatever="@mdo">
-                <div class="fas fa-comments" id="login-btn"></div>
-            </button>
+            
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <!-- CART LAYOUT -->
             <a href="./cart.html">
@@ -324,7 +321,10 @@
 
     <!-- modal -->
     <div class="container-modal">
-        
+        <button type="button" class="btn mess-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">
+                <div class="fas fa-comments" class="mess-btn"> Liên hệ với chúng tôi</div>
+        </button>
 
 
 
@@ -361,8 +361,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button"  data-bs-dismiss="modal">Close</button>
+                        <button type="button" >Send message</button>
                     </div>
                 </div>
             </div>
