@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../CSS/cartstyle.css">
     <title>CART</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(() => {
+        $(".container-modal").load("./modal.html");
+        
+    }) 
+</script>
 </head>
 <body>
+    <div class="container-modal">
+
+    </div>
     <header class="header">
         <a href="./index.html" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
 
@@ -21,7 +32,7 @@
         </nav>
 
         <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"> </div>
+            <!-- <div class="fas fa-bars" id="menu-btn"> </div> -->
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <!-- CART LAYOUT -->
             <a href="./cart.html"><div class="fas fa-shopping-cart" id=""></div></a>
