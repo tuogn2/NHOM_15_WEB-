@@ -17,12 +17,19 @@
             
         }) 
     </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 </head>
 
 
 <body>
-    <div class="container-modal">
-
+    <div class="modal" id="modal">
+        <div class="modal__overplay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <i class="fa-duotone fa-circle-check" style="--fa-primary-color: #ffffff; --fa-secondary-color: #73e896; --fa-secondary-opacity: 1;"></i>
+                <p>Sản phẩm đã được thêm vào giỏ hàng</p>
+            </div>
+        </div>
     </div>
     <section>
         <header class="header">
@@ -221,6 +228,5 @@
         </div>
     </section>
     <script src="./search.js"></script>
-    <script src="../JS/sanpham.js">
-    </script>
+    <script src="../JS/sanpham.js"></script>
 </body>
