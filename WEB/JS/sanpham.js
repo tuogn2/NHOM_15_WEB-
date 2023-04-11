@@ -1,5 +1,7 @@
 var giohang = new Array();
 
+let timeout;
+
 function addcart(x) {
     let boxsp = x.parentElement.children;
     let hinh = boxsp[0].src;
@@ -7,9 +9,24 @@ function addcart(x) {
     let gia = boxsp[3].children[0].innerText;
     let sp = new Array(hinh, tensp, gia);
 
-    giohang.push(sp);
+    let kt = 0;
+    for (let i = 0; i < giohang.length; i++) {
+        if(giohang[i][1] == tensp){
+            kt = 1;
+        }
+    }
+
+    if(kt == 0){
+        giohang.push(sp);
+    }
 
     sessionStorage.setItem("giohang", JSON.stringify(giohang));
+    document.getElementById("modal").style.display="flex";
+    timeout = setTimeout(alertFunc, 1500);
+}
+
+function alertFunc() {
+    document.getElementById("modal").style.display="none";
 }
 
 function mycart() {
