@@ -282,7 +282,7 @@ section{
 .login-container{
     /* background-color: rgba(127, 255, 212,0.1); */
     height: 470px;
-    width: 444px;
+    width: 490px;
     border: 2px double #cb8241;
     border-radius: 10px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -330,7 +330,7 @@ section{
     width: 100%;
 }
 .label-input label{
-    width: 50px;
+    width: 90px;
     color: white;
     margin-right: 10px;
     /* height: 30px; */
