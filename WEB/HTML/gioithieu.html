@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(".container-modal").load("./modal.html");
+            
+        }) 
+    </script> -->
     <link rel="stylesheet" href="../CSS/gioithieu.css">
+    <!-- <link rel="stylesheet" href="../CSS/style.css"> -->
 </head>
 
 <body>
@@ -22,7 +31,7 @@
         </nav>
 
         <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"> </div>
+            <!-- <div class="fas fa-bars" id="menu-btn"> </div> -->
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <div class="fas fa-shopping-cart" id="cart-btn"> </div>
             <a href="./loginform.html">
@@ -31,6 +40,7 @@
         </div>
 
     </header>
+    <section class="event" id="event"></section>
 
     <section class="gioithieu">
         <div class="box-container">
@@ -147,6 +157,13 @@
             </div>
         </div>
    </section>
+
+   <div class="container-modal">
+
+   </div>
+
+   <script src="../JS/search.js"></script>
+   
 </body>
 
 </html>

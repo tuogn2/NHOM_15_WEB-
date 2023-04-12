@@ -1,35 +1,60 @@
-<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+<head>
+    <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/sanpham.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"/> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(".container-modal").load("./modal.html");
+            
+        }) 
+    </script> -->
 </head>
+
+
 <body>
+    <div class="modal" id="modal">
+        <div class="modal__overplay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <i class="fa-duotone fa-circle-check" style="--fa-primary-color: #ffffff; --fa-secondary-color: #73e896; --fa-secondary-opacity: 1;"></i>
+                <p>Sản phẩm đã được thêm vào giỏ hàng</p>
+            </div>
+        </div>
+    </div>
     <section>
         <header class="header">
             <a href="./index.html" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
-    
+
             <nav class="navbar">
                 <a href="./index.html">Trang chủ</a>
                 <a href="./gioithieu.html">Giới thiệu</a>
                 <a href="./index-sukien.html">Sự kiện</a>
                 <a href="./sanpham.html">Sản phẩm</a>
             </nav>
-    
+
             <div class="icons">
                 <div class="fas fa-bars" id="menu-btn"> </div>
                 <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
                 <!-- CART LAYOUT -->
-                <a href="./cart.html"><div class="fas fa-shopping-cart" id=""></div></a>
-                <a href="./loginform.html"><div class="fas fa-user" id="login-btn"></div></a>
+                <a href="./cart.html">
+                    <div class="fas fa-shopping-cart" id=""></div>
+                </a>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
             </div>
-    
-            
-            <!-- Trang chủ --> 
+
+
+            <!-- Trang chủ -->
         </header>
         <article>
             <div class="box_background">
@@ -46,9 +71,9 @@
                 <a href="#" class="btn">Mua ngay</a>
             </div>
        </section> -->
-       
-       <!-- sự kiện -->
-       <!-- <section class="event" id="event">
+
+        <!-- sự kiện -->
+        <!-- <section class="event" id="event">
         <h1 class="heading">Sự kiện <span>Khuyến mãi</span></h1>
        <div class="box-container">
     
@@ -67,23 +92,17 @@
                     <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-legion-5-15iah7-i5.jpg" alt="Lenovo">
                     <h3>Lenovo Leigon 5 </h3>
                     <p>Máy có thể đáp ứng hoàn hảo nhu cầu giải trí và đồ họa thuộc nhiều lĩnh vực khác nhau...</p>
-                    <p class="price">Giá: 36.190.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemLenovoLeigon5.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p class="price">Giá: <span>36.190.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemLenovoLeigon5.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
                 <div class="sp2">
                     <img src="../IMG/LaptopKyThuat/MSI/msi-creator-z16-a12uet-i7.jpg" alt="Asus">
                     <h3>MSI Creator Z16</h3>
                     <p>Được thiết kế cao cấp - sang trọng khi sở hữu những thông số mạnh mẽ từ cấu hình, màn hình..</p>
-                    <p class="price">Giá: 60.190.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemMSI_Creator.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p class="price">Giá: <span>60.190.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemMSI_Creator.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
             <h2>Laptop Đồ họa-Kĩ thuật <i class="fas fa-window-restore" style="color: orange;"></i></h2>
@@ -91,24 +110,22 @@
                 <div class="sp1">
                     <img src="../IMG/LaptopKyThuat/Hp/hp-pavilion-15-eg2034tx-i7.jpg" alt="HP Pavilion">
                     <h3>HP Pavilion 15</h3>
-                    <p>Là 1 laptop Kĩ thuật khi sở hữu cấu hình mạnh mẽ đến từ chip Intel Gen 12 với ngoại hình không kém hiện đại.</p>
-                    <p class="price">Giá: 27.690.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemHP.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Là 1 laptop Kĩ thuật khi sở hữu cấu hình mạnh mẽ đến từ chip Intel Gen 12 với ngoại hình không
+                        kém hiện đại.</p>
+                    <p class="price">Giá: <span>27.690.000</span><sup>đ</sup></p>
+
+                    <button><a href="../HTML/xemthemHP.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
                 <div class="sp2">
                     <img src="../IMG/LaptopKyThuat/MSI/msi-modern-14-b11mou-i3-1115g4.jpg" alt="Modern 14">
                     <h3>MSI Modern 14 </h3>
-                    <p>Laptop sở hữu cấu hình ổn định đến từ con chip Intel Gen 11 với ngoại hình trang nhã mang tính di động cao</p>
-                    <p class="price">Giá: 24.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemMSI_Modern.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Laptop sở hữu cấu hình ổn định đến từ con chip Intel Gen 11 với ngoại hình trang nhã mang tính di
+                        động cao</p>
+                    <p class="price">Giá: <span>24.990.000</span><sup>đ</sup></p>
+
+                    <button><a href="../HTML/xemthemMSI_Modern.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
             <h2>Laptop Học tập-Văn phòng <i class="fas fa-briefcase" style="color: orange;"></i></h2>
@@ -116,23 +133,20 @@
                 <div class="sp1">
                     <img src="../IMG/LaptopKyThuat/Asus/asus-vivobook-pro-15-k6502z-i5.jpg" alt="HP Pavilion">
                     <h3>Asus Vivobook Pro</h3>
-                    <p>Nhà Asus cho ra mắt để phục vụ tối đa mọi tác vụ từ cơ bản đến nâng cao rất phù hợp việc học tập</p>
-                    <p class="price">Giá: 20.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        <button><a href="../HTML/xemthemAsusVivobook.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Nhà Asus cho ra mắt để phục vụ tối đa mọi tác vụ từ cơ bản đến nâng cao rất phù hợp việc học tập
+                    </p>
+                    <p class="price">Giá: <span>20.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemAsusVivobook.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
                 <div class="sp2">
                     <img src="../IMG/LaptopKyThuat/Apple Macbook/apple-macbook-pro-2020-z11c.jpg" alt="Modern 14">
                     <h3>Apple Macbook Pro Z11 </h3>
-                    <p>Đây là 1 laptop được nâng cấp với bộ vi xử lý mới cực kỳ mạnh mẽ ,đảm bảo và phục vụ tốt cho công việc của bạn</p>
-                    <p class="price">Giá: 30.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-
-                        <button><a href="../HTML/xemthemMacbook.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Đây là 1 laptop được nâng cấp với bộ vi xử lý mới cực kỳ mạnh mẽ ,đảm bảo và phục vụ tốt cho công
+                        việc của bạn</p>
+                    <p class="price">Giá: <span>30.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemMacbook.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
             <h2>Laptop Cao Cấp-Sang Trọng <i class="fas fa-coins" style="color: orange;"></i></h2>
@@ -140,25 +154,20 @@
                 <div class="sp1">
                     <img src="../IMG/LaptopKyThuat/Lenovo/lenovo-ideapad-5-pro.jpg" alt="Lenovo">
                     <h3>Lenovo Ideapad 5 Pro</h3>
-                    <p>Lenovo Ideapad được trang bị bộ vi xử lý Intel Core i5 với hiệu suất tăng 30% so với thế hệ trước</p>
-                    <p class="price">Giá: 45.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemLenevoIdepad.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
-                    
+                    <p>Lenovo Ideapad được trang bị bộ vi xử lý Intel Core i5 với hiệu suất tăng 30% so với thế hệ trước
+                    </p>
+                    <p class="price">Giá: <span>45.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemLenevoIdepad.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
                 <div class="sp2">
                     <img src="../IMG/LaptopKyThuat/Apple Macbook/acer-swift-x-sfx16-51g-516q-i5.webp" alt="Acer">
                     <h3>Acer Swift X SFX16-51G</h3>
-                    <p>Có hiệu năng mạnh mẽ, xử lý mượt mà các tác vụ thiết kế đồ hoạ, trên các phần mềm Photoshop, AI, Premiere,... </p>
-                    <p class="price">Giá: 30.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemAcerSwift.html">xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Có hiệu năng mạnh mẽ, xử lý mượt mà các tác vụ thiết kế đồ hoạ, trên các phần mềm Photoshop, AI,
+                        Premiere,... </p>
+                    <p class="price">Giá: <span>30.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemAcerSwift.html">xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
             <h2>Laptop Mỏng-Nhẹ <i class="fas fa-tv" style="color: orange;"></i></h2>
@@ -166,61 +175,57 @@
                 <div class="sp1">
                     <img src="../IMG/LaptopKyThuat/Apple Macbook/laptopmongnhe8.jpg " alt="Asus-Zenbook">
                     <h3>Asus ZenBook</h3>
-                    <p>Những chiếc laptop thuộc dòng Zenbook của ASUS vốn dĩ luôn nổi bật với thiết kế gọn nhẹ tinh tế</p>
-                    <p class="price">Giá: 23.990.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemAsusZenbook13.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Những chiếc laptop thuộc dòng Zenbook của ASUS vốn dĩ luôn nổi bật với thiết kế gọn nhẹ tinh tế
+                    </p>
+                    <p class="price">Giá: <span>23.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemAsusZenbook13.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
                 <div class="sp2">
                     <img src="../IMG/LaptopKyThuat/Apple Macbook/laptopcaocap5.jpg" alt="Asus VivoBook">
                     <h3>Asus VivoBook X415EA</h3>
-                    <p>Mang vẻ ngoài sang trọng, thanh lịch cùng hiệu năng ổn định đến từ chip Intel thế hệ 11 tân tiến</p>
-                    <p class="price">Giá: 21.490.000<sup>đ</sup></p>
-                    <div class="box_button">
-                        
-                        <button><a href="../HTML/xemthemAsusVivoBookXX.html">Xem thêm</a></button>
-                        <button style="width: 50px;"><a href="#"><i class="fas fa-shopping-cart"></i></a></button>
-                    </div>
+                    <p>Mang vẻ ngoài sang trọng, thanh lịch cùng hiệu năng ổn định đến từ chip Intel thế hệ 11 tân tiến
+                    </p>
+                    <p class="price">Giá: <span>21.490.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemAsusVivoBookXX.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
         </div>
     </div>
     <section class="footer">
-    <div class="box-container">
+        <div class="box-container">
 
-        <div class="box">
-            <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
-            <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
-            <div class="share">
-                <a href="" class="fab fa-facebook-f" ></a>
-                <a href="" class="fab fa-twitter" > </a>
-                <a href="" class="fab fa-instagram" > </a>
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"> </a>
+                    <a href="" class="fab fa-instagram"> </a>
+                </div>
+            </div>
 
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links"> <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links"> <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ
+                    Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21046361 Trần Thị Thúy Vy</p>
+                <p>21129041 Đỗ Chí Tường</p>
+                <p>21000505 Trương Công Anh Vĩ</p>
+                <p>20003435 Trương Thị Tường Vy</p>
+                <p>21026071 Đặng Minh Vương</p>
+                <p>21014021 Võ Nguyên Vũ </p>
             </div>
         </div>
-
-        <div class="box">
-            <h3>Thông tin liên hệ: </h3>
-            <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
-            <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
-            <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
-            <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
-        </div>
-
-        <div class="box">
-            <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
-            <p>21046361 Trần Thị Thúy Vy</p>
-            <p>21129041 Đỗ Chí Tường</p>
-            <p>21000505 Trương Công Anh Vĩ</p>
-            <p>20003435 Trương Thị Tường Vy</p>
-            <p>21026071 Đặng Minh Vương</p>
-            <p>21014021 Võ Nguyên Vũ </p>
-        </div>
-    </div>
     </section>
     <script src="./search.js"></script>
-    
+    <script src="../JS/sanpham.js"></script>
 </body>

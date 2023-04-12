@@ -521,3 +521,7 @@ section{
     background: var(--orange);
 }
 
+.error{
+    color: red;
+    font-style: italic;
+}

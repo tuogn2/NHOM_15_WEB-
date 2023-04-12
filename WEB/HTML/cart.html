@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../CSS/cartstyle.css">
     <title>CART</title>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(() => {
+        $(".container-modal").load("./modal.html");
+        
+    }) 
+</script> -->
 </head>
+
 <body>
+    <div class="container-modal">
+
+    </div>
     <header class="header">
         <a href="./index.html" class="logo"> <i class="fas fa-laptop"></i>Laptop-Star</a>
 
@@ -21,19 +34,23 @@
         </nav>
 
         <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"> </div>
+            <!-- <div class="fas fa-bars" id="menu-btn"> </div> -->
             <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
             <!-- CART LAYOUT -->
-            <a href="./cart.html"><div class="fas fa-shopping-cart" id=""></div></a>
-            <a href="./loginform.html"><div class="fas fa-user" id="login-btn"></div></a>
+            <a href="./cart.html">
+                <div class="fas fa-shopping-cart" id=""></div>
+            </a>
+            <a href="./loginform.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
         </div>
-        <!-- Trang chủ --> 
+        <!-- Trang chủ -->
     </header>
 
     <div class="cart-page-header-wrapper">
         <div class="container">
             <div class="cart-page-header">
-                <a href="" class="cart-page-logo"><i class="fas fa-laptop"></i>Laptop-Star</a> | 
+                <a href="" class="cart-page-logo"><i class="fas fa-laptop"></i>Laptop-Star</a> |
                 <p class="cart-page-header-text">Giỏ Hàng</p>
             </div>
             <div class="cart-page-searchbar">
@@ -50,7 +67,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <main class="main">
             <div class="main__header">
@@ -58,7 +75,8 @@
                     <div class="main__header-icon-cart"><i class="fas fa-shopping-cart"></i></div>
                 </div>
                 <div class="main__header-text">
-                    <p class="main__header-text-content">Nhấn vào mục Mã giảm giá ở cuối trang để hưởng miễn phí vận chuyển bạn nhé!</p>
+                    <p class="main__header-text-content">Nhấn vào mục Mã giảm giá ở cuối trang để hưởng miễn phí vận
+                        chuyển bạn nhé!</p>
                 </div>
             </div>
             <div class="main__header-product">
@@ -71,13 +89,11 @@
                 <div class="main__header-product-right">
                     <div class="main__header-product-text">Đơn Giá</div>
                     <div class="main__header-product-text">Số Lượng</div>
-                    <div class="main__header-product-text">Số Tiền</div>
-                    <div class="main__header-product-text">Thao Tác</div>
                 </div>
             </div>
             <div class="main__content main__content__nocart">
                 <div class="main__content-container">
-                    <div class="main__content-container-img">
+                    <!-- <div class="main__content-container-img">
                         <img src="../IMG/cart.png" alt="">
                     </div>
                     <div class="main__content-container-text">
@@ -89,8 +105,33 @@
                                 <span>Mua Ngay</span>
                             </button>
                         </a>
-                    </div>
+                    </div> -->
+                    <!-- <div class="product">
+                        <div class="product__left">
+                            <img src="../IMG/acer-swift-3-sf314-512-56qn-i5-nxk0fsv002-ab-thumb-600x600.jpg" alt="">
+                            <p>acer nitro 5</p>
+                        </div>
+                        <div class="product__right">
+                            <div class="product__right-price">
+                                <p>60.190.000</p>
+                            </div>
+                            <div class="product__right-soluong">
+                                <p id="soluong">1</p>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
+                <div id="mycart"></div>
+                <div id="mycart1"></div>
+                <!-- <div class="pay">
+                    <div class="total">
+                        <p>Tổng tiền: <span>60.190.000</span></p>
+                    </div>
+                    <div class="button-buy">
+                        <button id="reset-button" onclick="deletelocal()">MUA</button>
+                    </div>
+                </div> -->
+
             </div>
         </main>
     </div>
@@ -103,19 +144,20 @@
                 <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
                 <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
                 <div class="share">
-                    <a href="" class="fab fa-facebook-f" ></a>
-                    <a href="" class="fab fa-twitter" > </a>
-                    <a href="" class="fab fa-instagram" > </a>
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"> </a>
+                    <a href="" class="fab fa-instagram"> </a>
 
                 </div>
             </div>
 
             <div class="box">
                 <h3>Thông tin liên hệ: </h3>
-                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
-                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
-                <a href="" class="links" > <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
-                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links"> <i class="fas fa-envelope"> </i> laptopstar@gmail.com</a>
+                <a href="" class="links"> <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ
+                    Chí Minh</a>
             </div>
 
             <div class="box">
@@ -128,6 +170,36 @@
                 <p>21014021 Võ Nguyên Vũ </p>
             </div>
         </div>
-   </section>
+    </section>
+    <script src="../JS/sanpham.js"></script>
+    <script>
+        showgiohang_trangthanhtoan();
+        showgiohang_total();
+    </script>
+    <!-- <script>
+        let amountElement = document.getElementById("amount");
+        let amount = amountElement.value;
+        let render = (amount) => {
+            amountElement.value = amount;
+        }
+        let handlePlus = () => {
+            amount++;
+            render(amount);
+        }
+
+        let handleMinus = () => {
+            if (amount > 1) {
+                amount--;
+            }
+            render(amount);
+        }
+    </script>
+    <script>
+        amountElement.addEventListener('input',()=>{
+            amount = amountElement.value;
+            console.log(amount);
+        })
+    </script> -->
 </body>
+
 </html>

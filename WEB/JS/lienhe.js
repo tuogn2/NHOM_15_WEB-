@@ -1,22 +1,44 @@
-const form = document.querySelector('form[name="myForm"]');
+const form = document.querySelector('.form');
 
-form.addEventListener('submit', function(event) {
-  const nameInput = document.querySelector('input[name="name"]');
-  const emailInput = document.querySelector('input[name="email"]');
-  const messArea = document.querySelector('textarea[name="mess"]');
+console.log(form);
+var nameInput = document.querySelector('.name');
+var emailInput = document.querySelector('.email');
+var messArea = document.querySelector('.mess');
+var submit = document.querySelector('.submit');
+
+console.log(document.querySelector('.mess-btn'));
+ 
+document.querySelector('.mess-btn').onclick = function(){
+  document.querySelector('.errorName').innerHTML = '';
+  document.querySelector('.errorEmail').innerHTML = '';
+  document.querySelector('.errorMess').innerHTML = '';
+}
+
+form.addEventListener('submit', function(event){
   
-  if (nameInput.value === '') {
-    alert('Vui lòng nhập tên của bạn');
-    event.preventDefault();
-  }
-  
-  if (emailInput.value === '' || !emailInput.value.includes('@')) {
-    alert('Vui lòng nhập địa chỉ email hợp lệ');
+  console.log(nameInput);
+
+  if(nameInput.value === "")
+  {
+    console.log(document.querySelector('.errorName').innerHTML);
+    document.querySelector('.errorName').innerHTML = 'Vui lòng nhập tên của bạn.';
     event.preventDefault();
   }
 
-  if (messArea.value === '') {
-    alert('Vui lòng nhập nội dung');
+  if(emailInput.value == "")
+  {
+    document.querySelector('.errorEmail').innerHTML = 'Vui lòng nhập email của bạn.';
     event.preventDefault();
   }
+
+  if(messArea.value === "")
+  {
+    console.log(document.querySelector('.errorName'));
+    document.querySelector('.errorMess').innerHTML = 'Vui lòng nhập nội dung.';
+    event.preventDefault();
+  }
+ 
+  
 });
+
+

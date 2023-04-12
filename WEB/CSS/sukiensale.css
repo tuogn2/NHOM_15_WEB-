@@ -374,8 +374,8 @@ section{
     font-weight:30px;
 }
 .lacay{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 
@@ -389,13 +389,16 @@ section{
 .enl{
     font-size: 10px;
     color:black;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
    
 }
 .ig{
    margin-top: 10PX;
     color: white;
-    background-color:black
+    background-color:black;
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
 .mg{
@@ -406,4 +409,6 @@ section{
 }
 .ag{
     background-color: #c9c4c4;
+    margin-left: 50px;
+    margin-right: 50px;
 }
